@@ -2,6 +2,8 @@
 // additional styles
 import { styles } from "../../utils/styles";
 
+import { ArrowRightIcon } from "@heroicons/react/24/solid"
+
 import course1 from "../../images/certified cyber.png"
 import course2 from "../../images/security training.png"
 
@@ -34,10 +36,10 @@ const CourseHighlight = () => {
                     Live Courses
                 </h1>
 
-                <div className=" flex flex-col gap-y-10 items-center md:flex-row md:items-stretch md:gap-x-20">
+                <div className=" flex flex-col gap-y-10 items-center md:flex-row md:items-stretch md:gap-x-40 lg:max-w-screen-md lg:mx-auto">
                     {courses.map(({ ...courses }) => {
                         return (
-                            <div key={courses.id} className=" bg-gray-100 p-4 rounded-md flex flex-col gap-y-5 items-center md:items-start md:basis-1/2">
+                            <div key={courses.id} className=" flex flex-col gap-y-5 items-center md:items-start md:basis-1/2">
                                 <div className="">
                                     <img src={courses.img} alt="course" className=" rounded-md" />
                                 </div>
@@ -56,9 +58,12 @@ const CourseHighlight = () => {
                                         {courses.descriptionFour}
                                     </p>
                                     <button
-                                        className=" bg-teal-500 px-5 py-1 rounded-md text-white lg:text-lg"
+                                        className=" bg-teal-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 lg:text-lg"
                                     >
-                                        Learn more
+                                        more
+                                        <span>
+                                            <ArrowRightIcon width={20} />
+                                        </span>
                                     </button>
                                 </div>
                             </div>
