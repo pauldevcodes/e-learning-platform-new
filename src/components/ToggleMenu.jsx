@@ -66,13 +66,13 @@ const ToggleMenu = ({ isOpen, setIsOpen, links }) => {
                         <Link
                             className=' font-["Poppins"] opacity-75 border-2 border-teal-500 rounded px-4 py-1 md:text-sm'
                         >
-                            Login
+                            Register
                         </Link>
-                        <Link
+                        {/* <Link
                             className=' font-["Poppins"] text-white opacity-75 bg-teal-500 border-2 border-teal-500 rounded px-4 py-1 md:text-sm'
                         >
                             Live courses
-                        </Link>
+                        </Link> */}
                     </motion.div>
                 )}
             </AnimatePresence>

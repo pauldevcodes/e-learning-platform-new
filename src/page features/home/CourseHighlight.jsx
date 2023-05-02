@@ -2,9 +2,8 @@
 // additional styles
 import { styles } from "../../utils/styles";
 
-import course1 from "../../images/certified cyber.jpg"
-import course2 from "../../images/security training.jpg"
-import course3 from "../../images/mentorship.jpg"
+import course1 from "../../images/certified cyber.png"
+import course2 from "../../images/security training.png"
 
 const CourseHighlight = () => {
 
@@ -13,40 +12,51 @@ const CourseHighlight = () => {
             id: 1,
             img: course1,
             title: "Certified in Cybersecurity",
-            description: "5 Weeks of Basic fundamentals of cyber security"
+            description: "5 Weeks of Basic fundamentals of cyber security",
+            descriptionTwo: "Introduction to Cyber Security",
+            descriptionThree: "Cyber Security Fundamentals",
+            descriptionFour: "Threat Landscape"
         },
         {
             id: 2,
             img: course2,
             title: "Security Plus training",
-            description: "11 weeks of training including preperation for the certification and hands on training."
-        },
-        {
-            id: 3,
-            img: course3,
-            title: "Mentorship",
-            description: "5 Week mentorship in Career Development, Resume deepdives. We help guide you in your professional career especially if you need next steps before or after getting certified."
-        },
+            description: "11 weeks of training including preperation for the certification and hands on training.",
+            descriptionTwo: "Introduction to Cyber Security and Security+",
+            descriptionThree: "Security Threats and Vulnerabilities",
+            descriptionFour: "Identity and Access Management"
+        }
     ]
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
-            <div className=" flex flex-col gap-y-8 items-center">
+            <div className=" flex flex-col gap-y-5 items-center">
                 <h1 className={`${styles.sectionHeading} `}>
-                    Live Virtual Courses
+                    Live Courses
                 </h1>
 
-                <div className=" flex flex-col gap-y-10 items-center">
-                    {courses.map(({ id, img, title, description }) => {
+                <div className=" flex flex-col gap-y-10 items-center md:flex-row md:items-stretch md:gap-x-20">
+                    {courses.map(({ ...courses }) => {
                         return (
-                            <div key={id} className=" flex flex-col gap-y-5 items-center md:flex-row-reverse lg:max-w-screen-md lg:gap-x-10">
-                                <div className=" basis-1/2">
-                                    <img src={img} alt="course" className=" rounded-md" />
+                            <div key={courses.id} className=" bg-gray-100 p-4 rounded-md flex flex-col gap-y-5 items-center md:items-start md:basis-1/2">
+                                <div className="">
+                                    <img src={courses.img} alt="course" className=" rounded-md" />
                                 </div>
-                                <div className=" flex flex-col items-center gap-y-4 text-center basis-1/2 md:items-start md:text-start">
-                                    <h3 className=" font-bold uppercase text-lg lg:text-2xl xl:text-3xl">{title}</h3>
-                                    <p className=" text-sm opacity-75 font-['Poppins'] lg:text-lg">{description}</p>
+                                <div className=" flex flex-col items-center gap-y-4 text-center md:items-start md:text-start">
+                                    <h3 className=" font-bold uppercase text-lg lg:text-2xl">{courses.title}</h3>
+                                    <p className=" text-sm opacity-75 lg:text-lg">
+                                        {courses.description}
+                                    </p>
+                                    <p className=" text-sm opacity-75 lg:text-lg">
+                                        {courses.descriptionTwo}
+                                    </p>
+                                    <p className=" text-sm opacity-75 lg:text-lg">
+                                        {courses.descriptionThree}
+                                    </p>
+                                    <p className=" text-sm opacity-75 lg:text-lg">
+                                        {courses.descriptionFour}
+                                    </p>
                                     <button
-                                        className=" bg-teal-500 px-5 py-1 rounded-md font-['Poppins'] text-white lg:text-lg"
+                                        className=" bg-teal-500 px-5 py-1 rounded-md text-white lg:text-lg"
                                     >
                                         Learn more
                                     </button>

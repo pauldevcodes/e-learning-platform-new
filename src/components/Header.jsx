@@ -9,7 +9,6 @@ import { motion } from 'framer-motion';
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 
 // utilities
-import { links } from '../utils/api';
 import { styles } from '../utils/styles'
 
 // assests
@@ -17,6 +16,24 @@ import logo from '../images/logo.png'
 import ToggleMenu from './ToggleMenu';
 
 const Header = () => {
+
+    const links = [
+        {
+            id: 1,
+            url: "/",
+            link: 'home'
+        },
+        {
+            id: 2,
+            url: "training",
+            link: 'training'
+        },
+        {
+            id: 3,
+            url: "about",
+            link: 'about'
+        },
+    ]
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -26,7 +43,7 @@ const Header = () => {
 
     return (
         <>
-            <nav className={`${styles.paddingX} py-3 flex items-center justify-between fixed w-full shadow-lg bg-white z-50`}>
+            <nav className={`${styles.paddingX} py-1 flex items-center justify-between fixed w-full shadow-lg bg-white z-50`}>
                 <Link>
                     <img src={logo} alt="logo" className=' w-14' />
                 </Link>
@@ -57,10 +74,10 @@ const Header = () => {
                                 to="login"
                                 className=' font-["Poppins"] opacity-75 md:text-sm'
                             >
-                                Login
+                                Register
                             </Link>
                         </motion.button>
-                        <motion.button
+                        {/* <motion.button
                             whileHover={{ scale: 1.1 }}
                             transition={{ ease: "easeInOut", duration: .5 }}
                             className=' bg-teal-500 border-2 border-teal-500 rounded px-4 py-1 hover:shadow-md'
@@ -71,7 +88,7 @@ const Header = () => {
                             >
                                 Live courses
                             </Link>
-                        </motion.button>
+                        </motion.button> */}
                     </div>
                 </div>
 
