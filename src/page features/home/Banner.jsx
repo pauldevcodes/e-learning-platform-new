@@ -3,26 +3,11 @@ import { Link } from "react-router-dom";
 
 // library
 import { motion, AnimatePresence } from "framer-motion";
-import { FaYoutube, FaFacebookF, FaTwitter } from 'react-icons/fa'
 
 // utilities
 import { styles } from "../../utils/styles";
 
 const Banner = () => {
-    // const socials = [
-    //     {
-    //         id: 1,
-    //         socialMedia: <FaYoutube />
-    //     },
-    //     {
-    //         id: 2,
-    //         socialMedia: <FaFacebookF />
-    //     },
-    //     {
-    //         id: 3,
-    //         socialMedia: <FaTwitter />
-    //     }
-    // ]
 
     return (
         <div className=" min-h-screen bg-hero-mobile bg-no-repeat bg-cover relative pt-48 pb-10 md:pt-40 md:bg-hero-tablet lg:bg-hero-desktop lg:pt-60">
@@ -57,18 +42,6 @@ const Banner = () => {
                                 Live courses
                             </Link>
                         </div>
-                        {/* <div className=" flex flex-row items-center gap-x-4">
-                            {socials.map(({ id, socialMedia }) => {
-                                return (
-                                    <Link
-                                        key={id}
-                                        className=" text-2xl text-current bg-white rounded-full p-3"
-                                    >
-                                        {socialMedia}
-                                    </Link>
-                                )
-                            })}
-                        </div> */}
                         <p className=" text-white font-medium">+1 (433) 888-6978</p>
                     </div>
                 </motion.div>

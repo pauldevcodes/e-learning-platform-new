@@ -29,7 +29,7 @@ const Mentorship = () => {
                     >
                         More
                         <span>
-                            <ArrowRightIcon width={20} />
+                            <ArrowRightIcon width={15} />
                         </span>
                     </Link>
                 </div>
