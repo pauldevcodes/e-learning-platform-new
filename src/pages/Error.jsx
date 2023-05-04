@@ -12,10 +12,10 @@ const Error = () => {
     return (
         <div className=" flex items-center justify-center h-screen p-5">
             <div className=" flex flex-col items-center gap-y-5">
-                <h1 className=" font-['Orbitron'] uppercase text-2xl text-center font-bold lg:text-4xl">
+                <h1 className=" uppercase text-2xl text-center font-bold lg:text-4xl">
                     Uh oh! We've got a problem
                 </h1>
-                <p className=" font-['Poppins'] lg:text-xl">
+                <p className=" lg:text-xl">
                     {error.message || error.statusText}
                 </p>
                 <div className=" flex items-center gap-x-4">

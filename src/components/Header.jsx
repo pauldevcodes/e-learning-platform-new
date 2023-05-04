@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 // library
 import { motion } from 'framer-motion';
-import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import { Bars3BottomRightIcon, XMarkIcon, ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid'
 
 // utilities
 import { styles } from '../utils/styles'
@@ -25,8 +25,10 @@ const Header = () => {
         },
         {
             id: 2,
-            url: "training",
-            link: 'training'
+            // url: "training",
+            link: 'training',
+            arrowup: <ChevronUpIcon width={15} />,
+            arrowdown: <ChevronDownIcon width={15} />
         },
         {
             id: 3,
@@ -36,9 +38,13 @@ const Header = () => {
     ]
 
     const [isOpen, setIsOpen] = useState(false)
+    const [arrowMenu, setArrowMenu] = useState(false)
 
     const navToggle = () => {
         setIsOpen(!isOpen)
+    }
+    const dropDown = () => {
+        setArrowMenu(!arrowMenu)
     }
 
     return (
@@ -50,14 +56,19 @@ const Header = () => {
 
                 <div className=' hidden md:flex md:flex-row md:items-center md:gap-x-10'>
                     <ul className=' md:flex md:items-center md:gap-x-4'>
-                        {links.map(({ id, link, url }) => {
+                        {links.map(({ id, link, url, arrowup, arrowdown }) => {
                             return (
                                 <li key={id}>
                                     <Link
                                         to={url}
-                                        className=' font-["Poppins"] capitalize opacity-75 hover:border-b-2 hover:border-b-teal-500 md:text-sm'
+                                        className=' flex items-center gap-x-1 font-["Poppins"] capitalize opacity-75 hover:border-b-2 hover:border-b-teal-500 md:text-sm'
                                     >
                                         {link}
+                                        <span
+                                            onClick={dropDown}
+                                        >
+                                            {arrowdown}
+                                        </span>
                                     </Link>
                                 </li>
                             )
