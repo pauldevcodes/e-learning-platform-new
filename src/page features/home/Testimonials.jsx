@@ -45,11 +45,11 @@ const Testimonials = () => {
                             <div key={id} className=" flex flex-col items-center gap-y-5 boxShadow p-5 rounded-md">
                                 <img src={img} alt="" className=" w-32 h-32 rounded-full" />
                                 <div className=" flex flex-col items-center gap-y-3">
-                                    <FaQuoteLeft size={30} />
+                                    <FaQuoteLeft size={30} color="gray" />
                                     <p className=" text-sm opacity-75 text-center">
                                         {p}
                                     </p>
-                                    <FaQuoteRight size={30} />
+                                    <FaQuoteRight size={30} color="gray" />
                                     <h4 className=" text-lg font-medium">
                                         {h4}
                                     </h4>
