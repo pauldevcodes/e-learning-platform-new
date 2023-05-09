@@ -29,31 +29,31 @@ const Signup = ({ Close, onSwitch }) => {
                 type="text"
                 placeholder="Enter email"
                 required
-                className="w-full focus:border-green-500 focus:outline-none"
+                className="w-full p-[10px] block mb-5 mt-[10px] border-4 border-[#e2e8f0] box-border focus:border-green-500 focus:outline-none"
               />
               <input
                 type="password"
                 placeholder="password"
                 required
-                className="w-full focus:border-green-500 focus:outline-none"
+                className="w-full p-[10px] block mb-5 mt-[10px] border-4 border-[#e2e8f0] box-border focus:border-green-500 focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="First name"
                 required
-                className="w-full focus:border-green-500 focus:outline-none"
+                className="w-full p-[10px] block mb-5 mt-[10px] border-4 border-[#e2e8f0] box-border focus:border-green-500 focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="Last name"
                 required
-                className="w-full focus:border-green-500 focus:outline-none"
+                className="w-full p-[10px] block mb-5 mt-[10px] border-4 border-[#e2e8f0] box-border focus:border-green-500 focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="Phone No(digit only)"
                 required
-                className="w-full focus:border-green-500 focus:outline-none"
+                className="w-full p-[10px] block mb-5 mt-[10px] border-4 border-[#e2e8f0] box-border focus:border-green-500 focus:outline-none"
               />
               <div className="w-full ">
                 <button className="bg-green-600 rounded-md w-full p-3">
@@ -94,7 +94,7 @@ const Signup = ({ Close, onSwitch }) => {
                 <h3 className="text-base font-semibold">
                   Already have an account?
                   <Link onClick={onSwitch} className="text-green-400">
-                    {/* {" "} */}
+                    {" "}
                     Sign in
                   </Link>
                 </h3>
