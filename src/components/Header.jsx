@@ -82,7 +82,7 @@ const Header = () => {
                             className=' border-2 bg-black border-black rounded px-4 py-1 hover:shadow-md'
                         >
                             <Link
-                                to="login"
+                                to="register"
                                 className=' text-white md:text-sm'
                             >
                                 Register

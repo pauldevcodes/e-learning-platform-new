@@ -6,6 +6,8 @@ import "./index.css";
 
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 // import About from "./pages/About";
 
 const router = createBrowserRouter([
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      {
+        path: "register",
+        element: <Signup />
+      },
+      {
+        path: "register/login",
+        element: <Login />
+      }
       // {
       //   path: "about",
       //   element: <About />,
