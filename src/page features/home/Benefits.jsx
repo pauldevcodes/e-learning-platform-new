@@ -42,7 +42,7 @@ const Benefits = () => {
                     return (
                         <div
                             style={{
-                                transform: isInView ? "none" : "translateY(400px)",
+                                // transform: isInView ? "none" : "translateY(400px)",
                                 opacity: isInView ? 1 : 0,
                                 transition: "all 3s 0.5s"
                             }}

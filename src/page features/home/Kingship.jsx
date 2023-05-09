@@ -21,8 +21,9 @@ const Kingship = () => {
     ]
 
     return (
-        <div className={`${styles.paddingX} ${styles.paddingY} flex flex-col items-center gap-y-10 lg:flex-row lg:gap-x-20`}>
-            <div className=" flex flex-col items-center gap-y-5 lg:items-start">
+        <div className={`${styles.paddingX} ${styles.paddingY} relative bg-benefits-banner bg-no-repeat bg-fixed bg-cover flex flex-col items-center gap-y-10 lg:flex-row lg:gap-x-20`}>
+            <div className=" overlay"></div>
+            <div className=" flex flex-col items-center gap-y-5 z-30 lg:items-start">
                 {/* <h1 className={`${styles.sectionHeading}`}>
                     Why Kingship
                 </h1> */}
@@ -40,7 +41,7 @@ const Kingship = () => {
                 </div>
             </div>
 
-            <div className=" flex flex-col items-center gap-y-5 lg:flex-row lg:gap-x-20">
+            <div className=" flex flex-col items-center gap-y-5 lg:flex-row lg:gap-x-20 z-30">
                 <div className=" bg-gray-200 rounded-sm p-5 flex flex-col gap-y-2">
                     <h3>
                         Goal Oriented

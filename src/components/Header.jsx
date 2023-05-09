@@ -74,15 +74,12 @@ const Header = () => {
                                 Home
                             </Link>
                         </li>
-                        <li className=' flex items-center gap-x-1'>
+                        <li className=' flex items-center gap-x-1 cursor-pointer' onClick={dropDown}>
                             <span className="capitalize opacity-75">
                                 Training
                             </span>
 
-                            <span
-                                className=' cursor-pointer'
-                                onClick={dropDown}
-                            >
+                            <span>
                                 {arrowMenu ? <ChevronUpIcon width={18} /> : <ChevronDownIcon width={18} />}
                                 {arrowMenu && (
                                     <div className=" absolute top-24 bg-black p-5 rounded-md flex flex-col gap-y-5">
