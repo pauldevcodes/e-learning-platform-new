@@ -65,24 +65,51 @@ const Header = () => {
                 </Link>
 
                 <div className=' hidden md:flex md:flex-row md:items-center md:gap-x-10'>
-                    <ul className=' md:flex md:items-center md:gap-x-4'>
-                        {links.map(({ id, link, url, arrowup, arrowdown }) => {
-                            return (
-                                <li key={id} className=' flex items-center gap-x-1'>
-                                    <Link
-                                        to={url}
-                                        className=' font-["Poppins"] capitalize opacity-75 hover:border-b-2 hover:border-b-teal-500 md:text-sm'
-                                    >
-                                        {link}
-                                    </Link>
-                                    <span
-                                        onClick={dropDown}
-                                    >
-                                        {arrowMenu ? arrowup : arrowdown}
-                                    </span>
-                                </li>
-                            )
-                        })}
+                    <ul className=' md:flex md:items-center md:gap-x-8'>
+                        <li>
+                            <Link
+                                to="/"
+                                className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li className=' flex items-center gap-x-1'>
+                            <span className="capitalize opacity-75">
+                                Training
+                            </span>
+
+                            <span
+                                className=' cursor-pointer'
+                                onClick={dropDown}
+                            >
+                                {arrowMenu ? <ChevronUpIcon width={18} /> : <ChevronDownIcon width={18} />}
+                                {arrowMenu && (
+                                    <div className=" absolute top-24 bg-black p-5 rounded-md flex flex-col gap-y-5">
+                                        <Link
+                                            to="cybersecurity"
+                                            className=' text-white hover:border-b-2 hover:border-b-orange-500'
+                                        >
+                                            Cyber Security
+                                        </Link>
+                                        <Link
+                                            to="security-training"
+                                            className=' text-white hover:border-b-2 hover:border-b-orange-500'
+                                        >
+                                            Security Training
+                                        </Link>
+                                    </div>
+                                )}
+                            </span>
+                        </li>
+                        <li>
+                            <Link
+                                to="about"
+                                className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
+                            >
+                                About
+                            </Link>
+                        </li>
                     </ul>
 
                     <div className='md:flex md:flex-row md:items-center md:gap-x-5'>
@@ -98,18 +125,6 @@ const Header = () => {
                                 Register
                             </Link>
                         </motion.button>
-                        {/* <motion.button
-                            whileHover={{ scale: 1.1 }}
-                            transition={{ ease: "easeInOut", duration: .5 }}
-                            className=' bg-teal-500 border-2 border-teal-500 rounded px-4 py-1 hover:shadow-md'
-                        >
-                            <Link
-                                to="courses"
-                                className=' font-["Poppins"] text-white opacity-90 md:text-sm'
-                            >
-                                Live courses
-                            </Link>
-                        </motion.button> */}
                     </div>
                 </div>
 
@@ -119,7 +134,7 @@ const Header = () => {
                     ) : (
                         <Signup Close={setMenu} onSwitch={handleSwitchPage} />
                     ))}
-                    
+
 
                 <div className=' md:hidden text-slate-500' onClick={navToggle}>
                     {isOpen ? <XMarkIcon width={30} /> : <Bars3BottomRightIcon width={30} />}

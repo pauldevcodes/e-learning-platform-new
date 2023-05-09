@@ -20,12 +20,12 @@ const Banner = () => {
                 >
                     <div className=" flex flex-col items-center gap-y-10 z-10 xl:gap-y-8">
                         <h1 className={` text-3xl text-center font-semibold text-white md:text-4xl lg:text-5xl xl:text-6xl`}>
-                            Launch into the <br className=" md:hidden" /> <span className=" text-blue-500 font-bold">cyber field</span>
+                            Launch into the <br className=" md:hidden" /> <span className=" text-orange-500 font-bold">cyber field</span>
                         </h1>
-                        <p className={`${styles.paragraphFont} opacity-70 text-center text-white md:text-lg`}>
+                        <p className={`${styles.paragraphFont} text-center text-white md:text-lg`}>
                             We train the next tech generation on the most innovative and recent technologies
                         </p>
-                        <p className={`${styles.paragraphFont} opacity-70 text-center text-white md:text-lg`}>
+                        <p className={`${styles.paragraphFont} text-center text-white md:text-lg`}>
                             Certified in Cybersecurity | Security plus training
                         </p>
                         <div className=" flex flex-col items-center gap-y-5 w-full md:flex-row md:justify-center md:gap-x-5">
@@ -37,7 +37,7 @@ const Banner = () => {
                             </Link>
                             <Link
                                 to="courses"
-                                className=' text-white bg-blue-500 border-2 border-blue-500 rounded px-4 py-2 text-center w-40 md:text-xl hover:opacity-90'
+                                className=' text-white bg-orange-500 border-2 border-orange-500 rounded px-4 py-2 text-center w-40 md:text-xl hover:opacity-90'
                             >
                                 Live courses
                             </Link>
