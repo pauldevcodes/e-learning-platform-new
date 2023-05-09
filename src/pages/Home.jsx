@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <>
             <Banner />
-            <CyberSecurity />
+            {/* <CyberSecurity /> */}
             <CourseHighlight />
             <Mentorship />
             <Benefits />

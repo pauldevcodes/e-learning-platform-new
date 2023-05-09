@@ -24,22 +24,22 @@ const Testimonials = () => {
             p: "This class has truly helped me grow and expand my knowledge of the field. I came here not knowing much about cyber security but Dami and Tiroye did such a great job in training me and equipped me with all the information and tools i needed to start my cybersecurity career.",
             h4: "Val Alabre"
         },
-        {
-            id: 4,
-            img: testimonyOne,
-            p: "This class helped me earn my Security+ certification on my first attempt! The instructors have a vast knowledge base and consistently provided explanations to any and all queries I posed. The additional labs and study materials, resources, and techniques bolstered my understanding significantly. My favorite aspect of the class is that the instructors find ways to make even the most complex topics seem fun and easy to understand",
-            h4: "Antonio S."
-        }
+        // {
+        //     id: 4,
+        //     img: testimonyOne,
+        //     p: "This class helped me earn my Security+ certification on my first attempt! The instructors have a vast knowledge base and consistently provided explanations to any and all queries I posed. The additional labs and study materials, resources, and techniques bolstered my understanding significantly. My favorite aspect of the class is that the instructors find ways to make even the most complex topics seem fun and easy to understand",
+        //     h4: "Antonio S."
+        // }
     ]
 
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <div>
-                <h1 className={`${styles.sectionHeading} mb-10 lg:mb-16`}>
-                    What our Students say about our academy
+                <h1 className={`${styles.sectionHeading} mb-10 text-center lg:mb-16`}>
+                    Testimonials
                 </h1>
 
-                <div className=" grid grid-cols-1 items-center gap-y-5 md:grid-cols-2 md:items-stretch md:gap-x-5 lg:grid-cols-3 xl:grid-cols-4">
+                <div className=" grid grid-cols-1 items-center gap-y-5 md:grid-cols-2 md:items-stretch md:gap-x-5 lg:grid-cols-3">
                     {testimonies.map(({ id, img, p, h4 }) => {
                         return (
                             <div key={id} className=" flex flex-col items-center gap-y-5 boxShadow p-5 rounded-md">

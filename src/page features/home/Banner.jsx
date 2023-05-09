@@ -10,7 +10,7 @@ import { styles } from "../../utils/styles";
 const Banner = () => {
 
     return (
-        <div className=" min-h-screen bg-hero-mobile bg-no-repeat bg-cover relative pt-48 pb-10 md:pt-40 md:bg-hero-tablet lg:bg-hero-desktop lg:pt-60">
+        <div className=" min-h-screen bg-hero-desktop bg-no-repeat bg-cover relative pt-48 pb-10 md:pt-40 lg:pt-60">
             <div className=" overlay"></div>
             <AnimatePresence>
                 <motion.div
@@ -31,13 +31,13 @@ const Banner = () => {
                         <div className=" flex flex-col items-center gap-y-5 w-full md:flex-row md:justify-center md:gap-x-5">
                             <Link
                                 to="mentorship"
-                                className=" bg-black px-4 py-3 rounded text-center text-white border-2 border-black w-60 md:text-xl hover:opacity-90"
+                                className=" bg-black px-4 py-2 rounded text-center text-white border-2 border-black w-40 md:text-xl hover:opacity-90"
                             >
                                 Mentorship
                             </Link>
                             <Link
                                 to="courses"
-                                className=' text-white bg-blue-500 border-2 border-blue-500 rounded px-4 py-3 text-center w-60 md:text-xl hover:opacity-90'
+                                className=' text-white bg-blue-500 border-2 border-blue-500 rounded px-4 py-2 text-center w-40 md:text-xl hover:opacity-90'
                             >
                                 Live courses
                             </Link>

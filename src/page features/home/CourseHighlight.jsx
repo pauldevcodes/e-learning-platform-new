@@ -58,7 +58,7 @@ const CourseHighlight = () => {
                                         {courses.descriptionFour}
                                     </p>
                                     <button
-                                        className=" bg-teal-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 lg:text-lg"
+                                        className=" bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 font-medium lg:text-lg"
                                     >
                                         more
                                         <span>

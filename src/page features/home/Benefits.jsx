@@ -47,12 +47,11 @@ const Benefits = () => {
                                 transition: "all 3s 0.5s"
                             }}
                             key={id}
-                            className="p-10 bg-blue-50 rounded-md flex flex-col gap-y-5 lg:w-96 lg:h-[500px] xl:h-[520px]"
+                            className="p-10 bg-blue-50 rounded-md flex flex-col gap-y-5 lg:w-72 lg:h-[480px]"
                         >
                             <img src={img} alt="illustration" className=" w-96" />
                             <h3 className=" text-2xl">{heading}</h3>
                             <p className="">{paragraph}</p>
-                            <span></span>
                         </div>
                     )
                 })}

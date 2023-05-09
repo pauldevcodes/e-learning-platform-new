@@ -58,18 +58,18 @@ const Header = () => {
                     <ul className=' md:flex md:items-center md:gap-x-4'>
                         {links.map(({ id, link, url, arrowup, arrowdown }) => {
                             return (
-                                <li key={id}>
+                                <li key={id} className=' flex items-center gap-x-1'>
                                     <Link
                                         to={url}
-                                        className=' flex items-center gap-x-1 font-["Poppins"] capitalize opacity-75 hover:border-b-2 hover:border-b-teal-500 md:text-sm'
+                                        className=' font-["Poppins"] capitalize opacity-75 hover:border-b-2 hover:border-b-teal-500 md:text-sm'
                                     >
                                         {link}
-                                        <span
-                                            onClick={dropDown}
-                                        >
-                                            {arrowdown}
-                                        </span>
                                     </Link>
+                                    <span
+                                        onClick={dropDown}
+                                    >
+                                        {arrowMenu ? arrowup : arrowdown}
+                                    </span>
                                 </li>
                             )
                         })}

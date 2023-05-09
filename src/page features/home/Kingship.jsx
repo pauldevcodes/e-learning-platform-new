@@ -23,9 +23,9 @@ const Kingship = () => {
     return (
         <div className={`${styles.paddingX} ${styles.paddingY} flex flex-col items-center gap-y-10 lg:flex-row lg:gap-x-20`}>
             <div className=" flex flex-col items-center gap-y-5 lg:items-start">
-                <h1 className={`${styles.sectionHeading}`}>
+                {/* <h1 className={`${styles.sectionHeading}`}>
                     Why Kingship
-                </h1>
+                </h1> */}
                 <div className=" flex flex-row items-center gap-x-4">
                     {socials.map(({ id, socialMedia }) => {
                         return (
