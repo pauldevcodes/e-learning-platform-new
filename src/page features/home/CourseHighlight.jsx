@@ -3,6 +3,7 @@
 import { styles } from "../../utils/styles";
 
 import { ArrowRightIcon } from "@heroicons/react/24/solid"
+import { CheckCircleIcon } from "@heroicons/react/24/solid"
 
 import course1 from "../../images/certified cyber.png"
 import course2 from "../../images/security training.png"
@@ -17,7 +18,8 @@ const CourseHighlight = () => {
             description: "5 Weeks of Basic fundamentals of cyber security",
             descriptionTwo: "Introduction to Cyber Security",
             descriptionThree: "Cyber Security Fundamentals",
-            descriptionFour: "Threat Landscape"
+            descriptionFour: "Threat Landscape",
+            // checkCircle: <CheckCircleIcon />
         },
         {
             id: 2,
@@ -26,7 +28,8 @@ const CourseHighlight = () => {
             description: "11 weeks of training including preperation for the certification and hands on training.",
             descriptionTwo: "Introduction to Cyber Security and Security+",
             descriptionThree: "Security Threats and Vulnerabilities",
-            descriptionFour: "Identity and Access Management"
+            descriptionFour: "Identity and Access Management",
+            // checkCircle: <CheckCircleIcon width={15} />
         }
     ]
     return (
@@ -44,19 +47,21 @@ const CourseHighlight = () => {
                                     <img src={courses.img} alt="course" className=" rounded-md" />
                                 </div>
                                 <div className=" flex flex-col items-center gap-y-4 text-center md:items-start md:text-start">
-                                    <h3 className=" font-bold uppercase text-lg lg:text-2xl">{courses.title}</h3>
-                                    <p className=" text-sm opacity-75 lg:text-lg">
-                                        {courses.description}
-                                    </p>
-                                    <p className=" text-sm opacity-75 lg:text-lg">
-                                        {courses.descriptionTwo}
-                                    </p>
-                                    <p className=" text-sm opacity-75 lg:text-lg">
-                                        {courses.descriptionThree}
-                                    </p>
-                                    <p className=" text-sm opacity-75 lg:text-lg">
-                                        {courses.descriptionFour}
-                                    </p>
+                                    <h3 className=" font-bold uppercase text-lg lg:text-xl">{courses.title}</h3>
+                                    <div className=" flex flex-col gap-y-2 h-64">
+                                        <p className=" text-sm opacity-75 lg:text-lg flex">
+                                            {courses.description}
+                                        </p>
+                                        <p className=" text-sm opacity-75 lg:text-lg">
+                                            {courses.descriptionTwo}
+                                        </p>
+                                        <p className=" text-sm opacity-75 lg:text-lg">
+                                            {courses.descriptionThree}
+                                        </p>
+                                        <p className=" text-sm opacity-75 lg:text-lg">
+                                            {courses.descriptionFour}
+                                        </p>
+                                    </div>
                                     <button
                                         className=" bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 font-medium lg:text-lg"
                                     >

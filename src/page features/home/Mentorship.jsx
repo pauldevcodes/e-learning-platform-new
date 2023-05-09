@@ -14,8 +14,8 @@ const Mentorship = () => {
                     Our Mentorship Program
                 </h1>
 
-                <div className=" max-w-screen-md mx-auto flex flex-col items-center gap-y-4">
-                    <p className=" text-sm opacity-75 text-center lg:text-lg">
+                <div className=" max-w-screen-md mx-auto flex flex-col items-center gap-y-4 md:items-start">
+                    <p className=" text-sm opacity-75 text-center md:text-start lg:text-lg">
                         This is a 5 week mentorship program in Career Development.
                         <br /> <br />
                         We help guide you in your professional career especially if you need next steps before or after getting certified
