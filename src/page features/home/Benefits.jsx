@@ -36,7 +36,7 @@ const Benefits = () => {
     const isInView = useInView(ref);
 
     return (
-        <div className={`${styles.paddingX} ${styles.paddingY}`}>
+        <div className={`${styles.paddingX} pb-14 md:pb-24`}>
             <div className=" flex flex-col items-center gap-y-4 lg:flex-row lg:justify-center lg:gap-x-10" ref={ref}>
                 {benefits.map(({ id, img, heading, paragraph }) => {
                     return (

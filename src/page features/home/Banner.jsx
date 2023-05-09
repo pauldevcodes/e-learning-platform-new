@@ -15,7 +15,7 @@ const Banner = () => {
             <AnimatePresence>
                 <motion.div
                     initial={{ y: -400, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1, transition: { duration: 4, ease: "easeIn", delay: 1 } }}
+                    animate={{ y: 0, opacity: 1, transition: { duration: 2, ease: "easeIn", delay: 1 } }}
                     className={` ${styles.paddingX} h-full flex flex-col justify-center lg:max-w-screen-lg lg:mx-auto`}
                 >
                     <div className=" flex flex-col items-center gap-y-10 z-10 xl:gap-y-8">

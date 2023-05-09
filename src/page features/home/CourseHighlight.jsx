@@ -15,10 +15,10 @@ const CourseHighlight = () => {
             id: 1,
             img: course1,
             title: "Certified in Cybersecurity",
-            description: "5 Weeks of Basic fundamentals of cyber security",
-            descriptionTwo: "Introduction to Cyber Security",
-            descriptionThree: "Cyber Security Fundamentals",
-            descriptionFour: "Threat Landscape",
+            description: "5 weeks of basic fundamentals of cyber security",
+            descriptionTwo: "Introduction to Cybersecurity",
+            descriptionThree: "Cybersecurity fundamentals",
+            descriptionFour: "Threat landscape",
             // checkCircle: <CheckCircleIcon />
         },
         {
@@ -26,7 +26,7 @@ const CourseHighlight = () => {
             img: course2,
             title: "Security Plus training",
             description: "11 weeks of training including preperation for the certification and hands on training.",
-            descriptionTwo: "Introduction to Cyber Security and Security+",
+            descriptionTwo: "Introduction to Cybersecurity and security+",
             descriptionThree: "Security Threats and Vulnerabilities",
             descriptionFour: "Identity and Access Management",
             // checkCircle: <CheckCircleIcon width={15} />
@@ -39,12 +39,12 @@ const CourseHighlight = () => {
                     Live Courses
                 </h1>
 
-                <div className=" flex flex-col gap-y-10 items-center md:flex-row md:items-stretch md:gap-x-40 lg:max-w-screen-md lg:mx-auto">
+                <div className=" flex flex-col gap-y-10 items-center md:flex-row md:items-stretch md:gap-x-40">
                     {courses.map(({ ...courses }) => {
                         return (
                             <div key={courses.id} className=" flex flex-col gap-y-5 items-center md:items-start md:basis-1/2">
                                 <div className="">
-                                    <img src={courses.img} alt="course" className=" rounded-md" />
+                                    <img src={courses.img} alt="course" className=" rounded-md bg-black" />
                                 </div>
                                 <div className=" flex flex-col items-center gap-y-4 text-center md:items-start md:text-start">
                                     <h3 className=" font-bold uppercase text-lg lg:text-xl">{courses.title}</h3>
@@ -65,7 +65,7 @@ const CourseHighlight = () => {
                                     <button
                                         className=" bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 font-medium lg:text-lg"
                                     >
-                                        more
+                                        More
                                         <span>
                                             <ArrowRightIcon width={15} />
                                         </span>

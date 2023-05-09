@@ -113,7 +113,7 @@ const Header = () => {
                         <motion.button
                             whileHover={{ translateX: -15 }}
                             transition={{ ease: "easeInOut", duration: .5 }}
-                            className=' border-2 bg-black border-black rounded px-4 py-1 hover:shadow-md'
+                            className=' border-2 bg-orange-500 border-orange-500 rounded px-4 py-1 hover:shadow-md'
                         >
                             <Link
                                 to="register"
