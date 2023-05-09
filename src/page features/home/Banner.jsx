@@ -10,7 +10,7 @@ import { styles } from "../../utils/styles";
 const Banner = () => {
 
     return (
-        <div className=" min-h-screen bg-hero-desktop bg-no-repeat bg-cover relative pt-48 pb-10 md:pt-40 lg:pt-60">
+        <div className=" min-h-screen bg-hero-desktop bg-no-repeat bg-fixed bg-cover relative pt-48 pb-10 md:pt-40 lg:pt-60">
             <div className=" overlay"></div>
             <AnimatePresence>
                 <motion.div
