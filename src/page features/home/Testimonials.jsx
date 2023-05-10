@@ -3,6 +3,8 @@ import { styles } from "../../utils/styles";
 import { FaQuoteRight, FaQuoteLeft } from "react-icons/fa"
 
 import testimonyOne from "../../images/testimonialOne.jpg"
+import testimonyTwo from "../../images/testimonialTwo.jpg"
+import testimonyThree from "../../images/testimonialThree.jpg"
 
 const Testimonials = () => {
     const testimonies = [
@@ -14,13 +16,13 @@ const Testimonials = () => {
         },
         {
             id: 2,
-            img: testimonyOne,
+            img: testimonyTwo,
             p: "My time attending the course was well worth it. The environment was welcoming. It was a fresh breeding ground for learning and participation. I wasn’t sure what to think initially signing up for the class, but now that that course has concluded, I can’t speak enough how much of a difference it has made for me in my professional career. The open discussion I was able to have with Dami and Tiroye really made it a positive experience. They go above and beyond to assist you in every way possible and put you in a position to succeed. If you are looking for a career change and have thought about going the Cyber security route then take the jump and attend this class. Fear and growth cannot exist in the same space. You won’t regret it",
             h4: "Steven Joy"
         },
         {
             id: 3,
-            img: testimonyOne,
+            img: testimonyThree,
             p: "This class has truly helped me grow and expand my knowledge of the field. I came here not knowing much about cyber security but Dami and Tiroye did such a great job in training me and equipped me with all the information and tools i needed to start my cybersecurity career.",
             h4: "Val Alabre"
         },
@@ -43,7 +45,9 @@ const Testimonials = () => {
                     {testimonies.map(({ id, img, p, h4 }) => {
                         return (
                             <div key={id} className=" flex flex-col items-center gap-y-5 boxShadow p-5 rounded-md">
-                                <img src={img} alt="" className=" w-32 h-32 rounded-full" />
+                                <div className=" w-[100px] h-[100px] overflow-hidden rounded-[50%]">
+                                    <img src={img} alt="" className=" w-full h-full object-cover" />
+                                </div>
                                 <div className=" flex flex-col items-center gap-y-3">
                                     <FaQuoteLeft size={30} color="gray" />
                                     <p className=" text-sm opacity-75 text-center">
