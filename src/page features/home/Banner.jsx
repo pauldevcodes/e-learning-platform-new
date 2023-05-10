@@ -18,17 +18,17 @@ const Banner = () => {
                     animate={{ y: 0, opacity: 1, transition: { duration: 2, ease: "easeIn", delay: 1 } }}
                     className={` ${styles.paddingX} h-full flex flex-col justify-center lg:max-w-screen-lg lg:mx-auto`}
                 >
-                    <div className=" flex flex-col items-center gap-y-10 z-10 xl:gap-y-8">
-                        <h1 className={` text-3xl text-center font-semibold text-white md:text-4xl lg:text-5xl xl:text-6xl`}>
+                    <div className=" flex flex-col items-center z-10">
+                        <h1 className={` text-3xl text-center font-semibold text-white mb-6 md:text-4xl lg:text-5xl xl:text-6xl`}>
                             Launch into the <br className=" md:hidden" /> <span className=" text-orange-500 font-bold">cyber field</span>
                         </h1>
-                        <p className={`${styles.paragraphFont} text-center text-white md:text-lg`}>
+                        <p className={`${styles.paragraphFont} text-center text-white mb-5 md:text-lg`}>
                             We train the next tech generation on the most innovative and recent technologies
                         </p>
-                        <p className={`${styles.paragraphFont} text-center text-white md:text-lg`}>
+                        <p className={`${styles.paragraphFont} text-center text-white mb-16 md:text-lg`}>
                             Certified in Cybersecurity | Security plus training
                         </p>
-                        <div className=" flex flex-col items-center gap-y-5 w-full md:flex-row md:justify-center md:gap-x-5">
+                        <div className=" flex flex-col items-center gap-y-5 w-full mb-5 md:flex-row md:justify-center md:gap-x-5">
                             <Link
                                 to="mentorship"
                                 className=" bg-black px-4 py-2 rounded text-center text-white border-2 border-black w-40 md:text-xl hover:opacity-90"

@@ -32,7 +32,7 @@ const Kingship = () => {
                         return (
                             <Link
                                 key={id}
-                                className=" text-2xl"
+                                className=" text-2xl text-orange-400"
                             >
                                 {socialMedia}
                             </Link>
@@ -43,7 +43,7 @@ const Kingship = () => {
 
             <div className=" flex flex-col items-center gap-y-5 lg:flex-row lg:gap-x-20 z-30">
                 <div className=" bg-gray-200 rounded-sm p-5 flex flex-col gap-y-2">
-                    <h3>
+                    <h3 className=" font-medium text-xl">
                         Goal Oriented
                     </h3>
                     <p>
@@ -53,7 +53,7 @@ const Kingship = () => {
 
                 <div className=" flex flex-col gap-y-5">
                     <div className=" bg-gray-200 rounded-sm p-5 flex flex-col gap-y-2">
-                        <h3>
+                        <h3 className=" font-medium text-xl">
                             Promising
                         </h3>
                         <p>
@@ -61,7 +61,7 @@ const Kingship = () => {
                         </p>
                     </div>
                     <div className=" bg-gray-200 rounded-sm p-5 flex flex-col gap-y-2">
-                        <h3>
+                        <h3 className=" font-medium text-xl">
                             Fun
                         </h3>
                         <p>

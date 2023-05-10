@@ -44,7 +44,7 @@ const CourseHighlight = () => {
                         return (
                             <div key={courses.id} className=" flex flex-col gap-y-5 items-center md:items-start md:basis-1/2">
                                 <div className="">
-                                    <img src={courses.img} alt="course" className=" rounded-md bg-black" />
+                                    <img src={courses.img} alt="course" className=" rounded-md" />
                                 </div>
                                 <div className=" flex flex-col items-center gap-y-4 text-center md:items-start md:text-start">
                                     <h3 className=" font-bold uppercase text-lg lg:text-xl">{courses.title}</h3>

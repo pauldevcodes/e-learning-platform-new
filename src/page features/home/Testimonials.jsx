@@ -48,15 +48,15 @@ const Testimonials = () => {
                                 <div className=" w-[100px] h-[100px] overflow-hidden rounded-[50%]">
                                     <img src={img} alt="" className=" w-full h-full object-cover" />
                                 </div>
+                                <h4 className=" text-lg font-medium">
+                                    {h4}
+                                </h4>
                                 <div className=" flex flex-col items-center gap-y-3">
                                     <FaQuoteLeft size={30} color="gray" />
                                     <p className=" text-sm opacity-75 text-center">
                                         {p}
                                     </p>
                                     <FaQuoteRight size={30} color="gray" />
-                                    <h4 className=" text-lg font-medium">
-                                        {h4}
-                                    </h4>
                                 </div>
                             </div>
                         )

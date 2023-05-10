@@ -16,7 +16,7 @@ const Contact = () => {
 
                 <div>
                     <Form
-                        className=" flex flex-col gap-3"
+                        className=" flex flex-col gap-3 max-w-screen-md mx-auto"
                     >
                         <input type="text" name="name" placeholder="Name" className=" rounded-md" />
                         <div className=" flex flex-col gap-3 md:flex-row">
