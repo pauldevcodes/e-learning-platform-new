@@ -95,6 +95,12 @@ const Header = () => {
                                         >
                                             Security Training
                                         </Link>
+                                        <Link
+                                            to="mentorship"
+                                            className=' text-white hover:border-b-2 hover:border-b-orange-500'
+                                        >
+                                            Mentorship
+                                        </Link>
                                     </div>
                                 )}
                             </span>
