@@ -7,6 +7,7 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid"
 
 import course1 from "../../images/certified cyber.png"
 import course2 from "../../images/security training.png"
+import { Link } from "react-router-dom";
 
 const CourseHighlight = () => {
 
@@ -19,6 +20,7 @@ const CourseHighlight = () => {
             descriptionTwo: "Introduction to Cybersecurity",
             descriptionThree: "Cybersecurity fundamentals",
             descriptionFour: "Threat landscape",
+            url: "cybersecurity"
             // checkCircle: <CheckCircleIcon />
         },
         {
@@ -29,6 +31,7 @@ const CourseHighlight = () => {
             descriptionTwo: "Introduction to Cybersecurity and security+",
             descriptionThree: "Security Threats and Vulnerabilities",
             descriptionFour: "Identity and Access Management",
+            url: "security-training"
             // checkCircle: <CheckCircleIcon width={15} />
         }
     ]
@@ -62,14 +65,18 @@ const CourseHighlight = () => {
                                             {courses.descriptionFour}
                                         </p>
                                     </div>
-                                    <button
-                                        className=" bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 font-medium lg:text-lg"
+                                    <Link
+                                        to={courses.url}
                                     >
-                                        More
-                                        <span>
-                                            <ArrowRightIcon width={15} />
-                                        </span>
-                                    </button>
+                                        <button
+                                            className=" bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 font-medium lg:text-lg"
+                                        >
+                                            More
+                                            <span>
+                                                <ArrowRightIcon width={15} />
+                                            </span>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         )

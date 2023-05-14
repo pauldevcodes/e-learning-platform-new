@@ -6,9 +6,8 @@ import "./index.css";
 
 import Home from "./pages/Home";
 import Error from "./pages/Error";
-import Signup from "./pages/Signup";
-import Login from "./pages/Login";
-// import About from "./pages/About";
+import CyberSecurity from "./pages/CyberSecurity";
+import Security from "./pages/Security";
 
 const router = createBrowserRouter([
   {
@@ -21,17 +20,13 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "register",
-        element: <Signup />
+        path: "cybersecurity",
+        element: <CyberSecurity />
       },
       {
-        path: "register/login",
-        element: <Login />
+        path: "security-training",
+        element: <Security />
       }
-      // {
-      //   path: "about",
-      //   element: <About />,
-      // },
     ],
   },
 ]);
