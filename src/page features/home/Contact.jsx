@@ -44,8 +44,8 @@ const Contact = () => {
                 </h1>
             </div>
 
-            <div className=" flex flex-col gap-y-16 md:gap-y-32 xl:flex-row xl:gap-x-20">
-                <div className=" flex flex-col gap-y-8 xl:basis-1/2">
+            <div className=" flex flex-col gap-y-16 md:gap-y-32 lg:flex-row lg:gap-x-20">
+                <div className=" flex flex-col gap-y-8 lg:basis-1/2">
                     {/* questions */}
                     <div className=" flex flex-col items-center gap-y-2 md:items-start lg:gap-y-5">
                         <h2 className=" text-white text-2xl font-bold md:text-3xl xl:text-5xl">Have a Quick Query?</h2>
@@ -72,7 +72,7 @@ const Contact = () => {
                 </div>
 
 
-                <div className=" bg-white p-6 rounded-md xl:basis-1/2">
+                <div className=" bg-white p-6 rounded-md lg:basis-1/2">
                     <div className=" flex flex-col items-center gap-y-2 mb-10">
                         <h2 className=" uppercase text-orange-500 text-2xl font-bold">
                             Drop a message
@@ -83,7 +83,7 @@ const Contact = () => {
                     </div>
 
                     <Form
-                        className=" flex flex-col gap-3 max-w-screen-md mx-auto xl:gap-y-8"
+                        className=" flex flex-col gap-3 max-w-screen-md mx-auto lg:gap-y-8"
                     >
                         <input type="text" name="name" placeholder="Name" className=" rounded-md" />
                         <input type="email" name="email" placeholder="Email" className=" rounded-md" />
