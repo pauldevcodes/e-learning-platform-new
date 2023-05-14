@@ -27,7 +27,7 @@ const Mentorship = () => {
 
                     <Link
                         to="mentorship"
-                        className="bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2"
+                        className="bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 duration-300 ease-in-out hover:bg-black"
                     >
                         More
                         <span>

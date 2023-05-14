@@ -8,6 +8,7 @@ import Banner from "../page features/home/Banner";
 import Mentorship from "../page features/home/Mentorship";
 import About from "../page features/home/About";
 import Contact from "../page features/home/Contact";
+import Apply from "../page features/home/Apply";
 
 const Home = () => {
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Benefits />
             <Kingship />
             <Testimonials />
+            <Apply />
             <About />
             <Contact />
         </>

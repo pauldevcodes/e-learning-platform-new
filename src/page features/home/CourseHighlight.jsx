@@ -69,7 +69,7 @@ const CourseHighlight = () => {
                                         to={courses.url}
                                     >
                                         <button
-                                            className=" bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 font-medium lg:text-lg"
+                                            className=" bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 font-medium duration-300 ease-in-out hover:bg-black lg:text-lg"
                                         >
                                             More
                                             <span>

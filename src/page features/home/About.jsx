@@ -23,7 +23,7 @@ const About = () => {
                         </p>
                         <Link
                             to="about"
-                            className=" bg-orange-500 px-5 py-1 rounded-md w-fit text-white flex items-center gap-x-2 font-medium lg:text-lg"
+                            className=" bg-orange-500 px-5 py-1 rounded-md w-fit text-white flex items-center gap-x-2 font-medium duration-300 ease-in-out hover:bg-black lg:text-lg"
                         >
                             Learn More
                             <span>
