@@ -25,7 +25,7 @@ const Banner = () => {
                         <p className={`${styles.paragraphFont} text-center text-white mb-5 md:text-lg`}>
                             We train the next tech generation on the most innovative and recent technologies
                         </p>
-                        <p className={`${styles.paragraphFont} text-center text-white mb-16 md:text-lg`}>
+                        <p className={`${styles.paragraphFont} text-center text-white mb-16 font-bold md:text-lg`}>
                             Certified in Cybersecurity | Security plus training
                         </p>
                         <div className=" flex flex-col items-center gap-y-5 w-full mb-5 md:flex-row md:justify-center md:gap-x-5">
