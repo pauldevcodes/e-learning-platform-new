@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // library
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Bars3BottomRightIcon, XMarkIcon, ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid'
 
 // utilities
@@ -20,6 +20,19 @@ import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 
 const Header = () => {
+
+    // animation
+    const item = {
+        exit: {
+            opacity: 0,
+            height: 0,
+            transition: {
+                ease: "easeInOut",
+                duration: 0.3,
+                // delay: .9
+            }
+        }
+    }
 
     const links = [
         {
@@ -74,37 +87,53 @@ const Header = () => {
                                 Home
                             </Link>
                         </li>
-                        <li className=' flex items-center gap-x-1 cursor-pointer' onClick={dropDown}>
-                            <span className="capitalize opacity-75">
-                                Training
-                            </span>
+                        <AnimatePresence>
+                            <li className=' flex items-center gap-x-1 cursor-pointer' onClick={dropDown}>
+                                <span className="capitalize opacity-75">
+                                    Training
+                                </span>
 
-                            <span>
-                                {arrowMenu ? <ChevronUpIcon width={18} /> : <ChevronDownIcon width={18} />}
-                                {arrowMenu && (
-                                    <div className=" absolute top-24 bg-black p-5 rounded-md flex flex-col gap-y-5">
-                                        <Link
-                                            to="cybersecurity"
-                                            className=' text-white hover:border-b-2 hover:border-b-orange-500'
+                                <span>
+                                    {arrowMenu ? <ChevronUpIcon width={18} /> : <ChevronDownIcon width={18} />}
+                                    {arrowMenu && (
+                                        <motion.div
+                                            variants={item}
+                                            initial={{ y: 80, opacity: 0 }}
+                                            animate={{ y: 0, opacity: 1 }}
+                                            transition={{ duration: .3 }}
+                                            exit={{
+                                                opacity: 0,
+                                                y: 90,
+                                                transition: {
+                                                    ease: "easeInOut",
+                                                    delay: .5
+                                                }
+                                            }}
+                                            className=" absolute top-24 bg-black p-5 rounded-md flex flex-col gap-y-5"
                                         >
-                                            Cyber Security
-                                        </Link>
-                                        <Link
-                                            to="security-training"
-                                            className=' text-white hover:border-b-2 hover:border-b-orange-500'
-                                        >
-                                            Security Training
-                                        </Link>
-                                        <Link
-                                            to="mentorship"
-                                            className=' text-white hover:border-b-2 hover:border-b-orange-500'
-                                        >
-                                            Mentorship
-                                        </Link>
-                                    </div>
-                                )}
-                            </span>
-                        </li>
+                                            <Link
+                                                to="cybersecurity"
+                                                className=' text-white hover:border-b-2 hover:border-b-orange-500'
+                                            >
+                                                Cyber Security
+                                            </Link>
+                                            <Link
+                                                to="security-training"
+                                                className=' text-white hover:border-b-2 hover:border-b-orange-500'
+                                            >
+                                                Security Training
+                                            </Link>
+                                            <Link
+                                                to="mentorship"
+                                                className=' text-white hover:border-b-2 hover:border-b-orange-500'
+                                            >
+                                                Mentorship
+                                            </Link>
+                                        </motion.div>
+                                    )}
+                                </span>
+                            </li>
+                        </AnimatePresence>
                         <li>
                             <Link
                                 to="about"
