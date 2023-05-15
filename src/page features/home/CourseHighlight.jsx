@@ -38,7 +38,7 @@ const CourseHighlight = () => {
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <div className=" flex flex-col gap-y-5 items-center">
-                <h1 className={`${styles.sectionHeading} `}>
+                <h1 className={`${styles.sectionHeading} bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent`}>
                     Live Courses
                 </h1>
 

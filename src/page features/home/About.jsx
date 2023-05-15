@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <div className=' flex flex-col items-center'>
-                <h1 className={`${styles.sectionHeading} mb-10 lg:mb-16`}>
+                <h1 className={`${styles.sectionHeading} mb-10 bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:mb-16`}>
                     About Us
                 </h1>
 

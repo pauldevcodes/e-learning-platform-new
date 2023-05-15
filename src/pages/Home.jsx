@@ -9,12 +9,14 @@ import Mentorship from "../page features/home/Mentorship";
 import About from "../page features/home/About";
 import Contact from "../page features/home/Contact";
 import Apply from "../page features/home/Apply";
+import Why from "../page features/home/Why";
 
 const Home = () => {
 
     return (
         <>
             <Banner />
+            <Why />
             <CourseHighlight />
             <Mentorship />
             <Benefits />

@@ -37,7 +37,7 @@ const Testimonials = () => {
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <div>
-                <h1 className={`${styles.sectionHeading} mb-10 text-center lg:mb-16`}>
+                <h1 className={`${styles.sectionHeading} mb-10 text-center bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:mb-16`}>
                     Testimonials
                 </h1>
 
