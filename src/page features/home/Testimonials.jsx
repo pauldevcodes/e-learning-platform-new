@@ -1,12 +1,21 @@
+import { useRef } from "react";
+
+// utils
 import { styles } from "../../utils/styles";
 
+// library
 import { FaQuoteRight, FaQuoteLeft } from "react-icons/fa"
+import { useInView } from "framer-motion";
 
 import testimonyOne from "../../images/testimonialOne.jpg"
 import testimonyTwo from "../../images/testimonialTwo.jpg"
 import testimonyThree from "../../images/testimonialThree.jpg"
 
 const Testimonials = () => {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref);
+
     const testimonies = [
         {
             id: 1,
@@ -37,7 +46,15 @@ const Testimonials = () => {
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <div>
-                <h1 className={`${styles.sectionHeading} mb-10 text-center bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:mb-16`}>
+                <h1
+                    ref={ref}
+                    style={{
+                        // transform: isInView ? "none" : "translateY(400px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 3s 0.5s"
+                    }}
+                    className={`${styles.sectionHeading} mb-10 text-center bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:mb-16`}
+                >
                     Testimonials
                 </h1>
 

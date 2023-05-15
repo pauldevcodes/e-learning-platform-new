@@ -1,13 +1,19 @@
+import { useRef } from "react";
+
 import { Form } from "react-router-dom";
 
 // library
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid"
 import { FaWhatsapp } from "react-icons/fa"
+import { useInView } from "framer-motion";
 
 // common styles
 import { styles } from "../../utils/styles";
 
 const Contact = () => {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref);
 
     const contactList = [
         {
@@ -39,7 +45,15 @@ const Contact = () => {
     return (
         <div className={`${styles.paddingX} py-7 md:py-14 bg-black`}>
             <div className=" flex flex-col gap-y-5 items-center mb-10 lg:mb-16">
-                <h1 className={`${styles.sectionHeading} text-white`}>
+                <h1
+                    ref={ref}
+                    style={{
+                        // transform: isInView ? "none" : "translateY(400px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 3s 0.5s"
+                    }}
+                    className={`${styles.sectionHeading} text-white`}
+                >
                     Contact us
                 </h1>
             </div>

@@ -1,3 +1,8 @@
+import { useRef } from "react";
+
+// library
+import { useInView } from "framer-motion";
+
 import { styles } from "../../utils/styles";
 
 // assests
@@ -6,10 +11,22 @@ import industryExpert from '../../images/industry-expert.png'
 import jobInterview from '../../images/job-interview.png'
 
 const Why = () => {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref);
+
     return (
         <div className={`${styles.paddingX}  py-7 md:py-14 flex flex-col items-center gap-y-10 md:gap-y-20`}>
             <div>
-                <h1 className={`${styles.sectionHeading} bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent`}>
+                <h1
+                    ref={ref}
+                    style={{
+                        // transform: isInView ? "none" : "translateY(400px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 3s 0.5s"
+                    }}
+                    className={`${styles.sectionHeading} bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent`}
+                >
                     Why Kingship Technologies
                 </h1>
             </div>

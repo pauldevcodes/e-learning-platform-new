@@ -1,8 +1,11 @@
+import { useRef } from "react";
 
 // additional styles
 import { styles } from "../../utils/styles";
 
+// library
 import { ArrowRightIcon } from "@heroicons/react/24/solid"
+import { useInView } from "framer-motion";
 import { CheckCircleIcon } from "@heroicons/react/24/solid"
 
 import course1 from "../../images/certified cyber.png"
@@ -10,6 +13,9 @@ import course2 from "../../images/security training.png"
 import { Link } from "react-router-dom";
 
 const CourseHighlight = () => {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref);
 
     const courses = [
         {
@@ -38,7 +44,15 @@ const CourseHighlight = () => {
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <div className=" flex flex-col gap-y-5 items-center">
-                <h1 className={`${styles.sectionHeading} bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent`}>
+                <h1
+                    ref={ref}
+                    style={{
+                        // transform: isInView ? "none" : "translateY(400px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 3s 0.5s"
+                    }}
+                    className={`${styles.sectionHeading} bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent`}
+                >
                     Live Courses
                 </h1>
 
