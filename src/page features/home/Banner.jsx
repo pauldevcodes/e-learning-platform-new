@@ -36,7 +36,7 @@ const Banner = () => {
                                 Mentorship
                             </Link>
                             <Link
-                                to="courses"
+                                to="register"
                                 className=' text-white bg-orange-500 border-2 border-orange-500 rounded px-4 py-2 text-center w-40 md:text-xl hover:opacity-90'
                             >
                                 Live courses
