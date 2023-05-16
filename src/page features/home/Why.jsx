@@ -1,8 +1,3 @@
-import { useRef } from "react";
-
-// library
-import { useInView } from "framer-motion";
-
 import { styles } from "../../utils/styles";
 
 // assests
@@ -12,19 +7,10 @@ import jobInterview from '../../images/job-interview.png'
 
 const Why = () => {
 
-    const ref = useRef(null)
-    const isInView = useInView(ref);
-
     return (
-        <div className={`${styles.paddingX}  py-7 md:py-14 flex flex-col items-center gap-y-10 md:gap-y-20`}>
+        <div className={`${styles.paddingX} pt-7 md:pt-14 flex flex-col items-center gap-y-10 md:gap-y-20`}>
             <div>
                 <h1
-                    ref={ref}
-                    style={{
-                        // transform: isInView ? "none" : "translateY(400px)",
-                        opacity: isInView ? 1 : 0,
-                        transition: "all 3s 0.5s"
-                    }}
                     className={`${styles.sectionHeading} bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent`}
                 >
                     Why Kingship Technologies
@@ -41,10 +27,10 @@ const Why = () => {
                             Fast-track your learning
                         </h4>
                         <h2 className=" text-2xl font-semibold">
-                            Right to the Point, No Fluff
+                            Clear and Concise
                         </h2>
                         <p className=" text-lg text-slate-700">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet natus aspernatur fugit qui, tempora ipsam, sed impedit quis ut quaerat quod repellat facilis, placeat libero corrupti illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, saepe.
+                            Our academy is committed to providing clear and concise information to our students. We believe that students should be able to access the information they need quickly and easily, without having to wade through unnecessary jargon or fluff.
                         </p>
                     </div>
                 </div>
@@ -57,10 +43,10 @@ const Why = () => {
                             Master a professional cyber security mindset
                         </h4>
                         <h2 className=" text-2xl font-semibold">
-                            Learn from an Industry Expert
+                            Learn from the Best
                         </h2>
                         <p className=" text-lg text-slate-700">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet natus aspernatur fugit qui, tempora ipsam, sed impedit quis ut quaerat quod repellat facilis, placeat libero corrupti illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, saepe.
+                            The best way to learn is from someone who has already been there. They can share their knowledge and experience, help you avoid mistakes, and guide you to success.
                         </p>
                     </div>
                 </div>
@@ -73,10 +59,10 @@ const Why = () => {
                             Boost your career options
                         </h4>
                         <h2 className=" text-2xl font-semibold">
-                            Real-World Preparation for Jobs and Interviews
+                            Navigating the Job Search Process
                         </h2>
                         <p className=" text-lg text-slate-700">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet natus aspernatur fugit qui, tempora ipsam, sed impedit quis ut quaerat quod repellat facilis, placeat libero corrupti illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, saepe.
+                            We provide students with the tools and resources they need to succeed in the job search process. We offer career counseling, resume writing assistance, and interview preparation. Our goal is to help students find the right job for them and achieve their career goals.
                         </p>
                     </div>
                 </div>

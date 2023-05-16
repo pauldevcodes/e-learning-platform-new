@@ -1,20 +1,14 @@
-import { useRef } from "react";
-
 // utils
 import { styles } from "../../utils/styles";
 
 // library
 import { FaQuoteRight, FaQuoteLeft } from "react-icons/fa"
-import { useInView } from "framer-motion";
 
 import testimonyOne from "../../images/testimonialOne.jpg"
 import testimonyTwo from "../../images/testimonialTwo.jpg"
 import testimonyThree from "../../images/testimonialThree.jpg"
 
 const Testimonials = () => {
-
-    const ref = useRef(null)
-    const isInView = useInView(ref);
 
     const testimonies = [
         {
@@ -35,24 +29,12 @@ const Testimonials = () => {
             p: "This class has truly helped me grow and expand my knowledge of the field. I came here not knowing much about cyber security but Dami and Tiroye did such a great job in training me and equipped me with all the information and tools i needed to start my cybersecurity career.",
             h4: "Val Alabre"
         },
-        // {
-        //     id: 4,
-        //     img: testimonyOne,
-        //     p: "This class helped me earn my Security+ certification on my first attempt! The instructors have a vast knowledge base and consistently provided explanations to any and all queries I posed. The additional labs and study materials, resources, and techniques bolstered my understanding significantly. My favorite aspect of the class is that the instructors find ways to make even the most complex topics seem fun and easy to understand",
-        //     h4: "Antonio S."
-        // }
     ]
 
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <div>
                 <h1
-                    ref={ref}
-                    style={{
-                        // transform: isInView ? "none" : "translateY(400px)",
-                        opacity: isInView ? 1 : 0,
-                        transition: "all 3s 0.5s"
-                    }}
                     className={`${styles.sectionHeading} mb-10 text-center bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:mb-16`}
                 >
                     Testimonials

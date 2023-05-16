@@ -12,7 +12,7 @@ const Apply = () => {
                     to="register"
                 >
                     <button className=" bg-transparent border-2 border-white py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-black hover:text-black">
-                        apply now
+                        register
                     </button>
                 </Link>
             </div>

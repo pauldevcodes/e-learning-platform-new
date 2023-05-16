@@ -1,5 +1,3 @@
-import { useRef } from "react";
-
 import { Link } from 'react-router-dom';
 
 // assests
@@ -10,24 +8,12 @@ import { styles } from '../../utils/styles';
 
 // library
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
-import { useInView } from "framer-motion";
 
 const About = () => {
-
-    const ref = useRef(null)
-    const isInView = useInView(ref);
-
-
     return (
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <div className=' flex flex-col items-center'>
                 <h1
-                    ref={ref}
-                    style={{
-                        // transform: isInView ? "none" : "translateY(400px)",
-                        opacity: isInView ? 1 : 0,
-                        transition: "all 3s 0.5s"
-                    }}
                     className={`${styles.sectionHeading} mb-10 bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:mb-16`}
                 >
                     About Us

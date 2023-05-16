@@ -1,10 +1,7 @@
-import { useRef } from "react";
-
 import { Link } from "react-router-dom";
 
 // library
 import { ArrowRightIcon } from "@heroicons/react/24/solid"
-import { useInView } from "framer-motion";
 
 // utils
 import { styles } from "../../utils/styles";
@@ -14,19 +11,10 @@ import mentorship from '../../images/mentorship.jpg'
 
 const Mentorship = () => {
 
-    const ref = useRef(null)
-    const isInView = useInView(ref);
-
     return (
         <div className={`${styles.paddingX} pb-8 flex flex-col-reverse gap-y-8 md:pb-14 lg:flex-row lg:gap-x-8`}>
             <div className=" flex flex-col items-center gap-y-5 md:items-start basis-1/2">
                 <h1
-                    ref={ref}
-                    style={{
-                        // transform: isInView ? "none" : "translateY(400px)",
-                        opacity: isInView ? 1 : 0,
-                        transition: "all 3s 0.5s"
-                    }}
                     className={`${styles.sectionHeading} text-center bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:text-start`}
                 >
                     Our Mentorship Program
