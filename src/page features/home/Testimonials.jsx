@@ -20,7 +20,7 @@ const Testimonials = () => {
         {
             id: 2,
             img: testimonyTwo,
-            p: "My time attending the course was well worth it. The environment was welcoming. It was a fresh breeding ground for learning and participation. I wasn’t sure what to think initially signing up for the class, but now that that course has concluded, I can’t speak enough how much of a difference it has made for me in my professional career. The open discussion I was able to have with Dami and Tiroye really made it a positive experience. They go above and beyond to assist you in every way possible and put you in a position to succeed. If you are looking for a career change and have thought about going the Cyber security route then take the jump and attend this class. Fear and growth cannot exist in the same space. You won’t regret it",
+            p: "My time attending the course was well worth it. The environment was welcoming. It was a fresh breeding ground for learning and participation. I wasn’t sure what to think initially signing up for the class, but now that that course has concluded, I can’t speak enough how much of a difference it has made for me in my professional career.",
             h4: "Steven Joy"
         },
         {
