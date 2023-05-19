@@ -10,6 +10,7 @@ import About from "../page features/home/About";
 import Contact from "../page features/home/Contact";
 import Apply from "../page features/home/Apply";
 import Why from "../page features/home/Why";
+import Instructors from "../page features/home/Instructors";
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
             <Benefits />
             <Kingship />
             <Testimonials />
+            <Instructors />
             <Apply />
             <About />
             <Contact />

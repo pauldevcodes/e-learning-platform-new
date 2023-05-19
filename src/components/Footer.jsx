@@ -8,12 +8,13 @@ import instagram from '../images/instagram.png'
 
 // react router dom
 import { Link } from 'react-router-dom';
+import { styles } from '../utils/styles'
 
 const Footer = () => {
     return (
-        <footer className=" bg-gray-800 px-[39px] pt-[65px] pb-[42px] flex flex-col gap-y-8 xl:px-20 xl:pt-[92px] xl:pb-[86px]">
+        <footer className={`${styles.paddingX} py-1 bg-gray-800 flex flex-col gap-y-8`}>
             <img src={logo} alt="logo" className=' w-14' />
-            <div className=' flex flex-col gap-y-8 xl:flex-row xl:items-start xl:justify-between'>
+            <div className=' flex flex-col gap-y-8 lg:flex-row lg:items-start lg:justify-between'>
                 <div className=' flex flex-col items-start gap-y-4'>
                     <div className=' flex flex-row items-center gap-x-4'>
                         <img src={phone} alt="phone" className=' w-6 h-6' />
