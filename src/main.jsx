@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import CyberSecurity from "./pages/CyberSecurity";
 import Security from "./pages/Security";
+import Faq from "./pages/Faq";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "security-training",
         element: <Security />
+      },
+      {
+        path: "faqs",
+        element: <Faq />
       }
     ],
   },

@@ -145,9 +145,7 @@ const Header = () => {
                     </ul>
 
                     <div className='md:flex md:flex-row md:items-center md:gap-x-5'>
-                        <motion.button
-                            whileHover={{ translateX: -15 }}
-                            transition={{ ease: "easeInOut", duration: .5 }}
+                        <button
                             className=' border-2 bg-orange-500 border-orange-500 rounded px-4 py-1 hover:bg-black hover:border-black hover:shadow-md'
                         >
                             <Link
@@ -156,7 +154,7 @@ const Header = () => {
                             >
                                 Register
                             </Link>
-                        </motion.button>
+                        </button>
                     </div>
                 </div>
 

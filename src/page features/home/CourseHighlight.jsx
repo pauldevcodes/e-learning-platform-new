@@ -53,10 +53,11 @@ const CourseHighlight = () => {
                                 </div>
                                 <div className=" flex flex-col gap-y-4 md:items-start md:text-start">
                                     <h3 className=" font-bold uppercase text-lg lg:text-xl">{courses.title}</h3>
-                                    <div className=" flex flex-col gap-y-2 md:h-48 ">
-                                        <p className=" text-sm opacity-75 lg:text-lg">
-                                            - {courses.description}
+                                    <div className=" flex flex-col gap-y-2 md:h-56 ">
+                                        <p className=" text-sm opacity-75 font-medium lg:text-lg">
+                                            {courses.description}
                                         </p>
+                                        <br />
                                         <p className=" text-sm opacity-75 lg:text-lg">
                                             - {courses.descriptionTwo}
                                         </p>
