@@ -26,7 +26,7 @@ const Why = () => {
                         <h4 className=" text-orange-400 uppercase text-sm">
                             Fast-track your learning
                         </h4>
-                        <h2 className=" text-2xl font-semibold">
+                        <h2 className=" text-2xl font-medium">
                             Clear and Concise
                         </h2>
                         <p className=" text-lg text-slate-700">
@@ -42,7 +42,7 @@ const Why = () => {
                         <h4 className=" text-orange-400 uppercase text-sm">
                             Boost your career options
                         </h4>
-                        <h2 className=" text-2xl font-semibold">
+                        <h2 className=" text-2xl font-medium">
                             Navigating the Job Search Process
                         </h2>
                         <p className=" text-lg text-slate-700">
