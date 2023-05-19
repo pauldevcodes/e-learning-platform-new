@@ -5,13 +5,14 @@ import {
 } from "react-icons/bs";
 
 import {SlScreenDesktop} from "react-icons/sl"
+import { Link } from "react-router-dom";
 
 const Outline = () => {
     return (
         <>
-            <div className=" bg-aboutBanner bg-cover bg-no-repeat min-h-[20vh] rounded-md my-10 mx-5 md:mx-14 relative">
+            <div className=" bg-aboutBanner bg-cover bg-no-repeat min-h-[20vh] rounded-md my-10 mx-5 md:mx-14 relative py-12 flex flex-col items-center gap-y-5">
                 <div className="absolute bg-black/50 w-full h-full top-0 left-0"></div>
-                <div className="flex sm:flex-row flex-col justify-around items-center gap-10 py-20">
+                <div className="flex flex-col items-start gap-y-5 md:flex-row md:justify-between w-full px-10">
                     <span className="text-white font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 md:justify-center justify-start items-center z-20">
                         <BsFillCalendarEventFill className="text-4xl" />
                         <span>5 Weeks</span>
@@ -29,6 +30,14 @@ const Outline = () => {
                         <span>$150,000</span>
                     </span>
                 </div>
+                <Link
+                    to="register"
+                    className=" z-20"
+                >
+                    <button className=" bg-transparent border-2 border-white py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-orange-500 hover:text-orange-500">
+                        register
+                    </button>
+                </Link>
             </div>
         </>
     );
