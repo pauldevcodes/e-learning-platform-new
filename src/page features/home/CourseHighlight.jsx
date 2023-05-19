@@ -1,15 +1,21 @@
+import { useRef } from "react";
+
 // additional styles
 import { styles } from "../../utils/styles";
 
 // library
 import { ArrowRightIcon } from "@heroicons/react/24/solid"
 import { CheckCircleIcon } from "@heroicons/react/24/solid"
+import { useInView } from "framer-motion";
 
 import course1 from "../../images/certified cyber.png"
 import course2 from "../../images/security training.png"
 import { Link } from "react-router-dom";
 
 const CourseHighlight = () => {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref);
 
     const courses = [
         {
@@ -47,12 +53,22 @@ const CourseHighlight = () => {
                 <div className=" flex flex-col gap-y-10 items-center md:flex-row md:items-stretch md:gap-x-40">
                     {courses.map(({ ...courses }) => {
                         return (
-                            <div key={courses.id} className=" flex flex-col gap-y-5 items-center md:items-start md:basis-1/2">
+                            <div key={courses.id} className=" flex flex-col gap-y-5 items-center md:items-start md:basis-1/2" ref={ref}>
                                 <div className="">
                                     <img src={courses.img} alt="course" className=" rounded-md" />
                                 </div>
-                                <div className=" flex flex-col gap-y-4 md:items-start md:text-start">
-                                    <h3 className=" font-bold uppercase text-lg lg:text-xl">{courses.title}</h3>
+                                <div
+                                    className=" flex flex-col gap-y-4 md:items-start md:text-start"
+                                    style={{
+                                        opacity: isInView ? 1 : 0,
+                                        transition: "all 5s 0.5s"
+                                    }}
+                                >
+                                    <h3
+                                        className=" font-bold uppercase text-lg lg:text-xl"
+                                    >
+                                        {courses.title}
+                                    </h3>
                                     <div className=" flex flex-col gap-y-2 md:h-56 ">
                                         <p className=" text-sm opacity-75 font-medium lg:text-lg">
                                             {courses.description}

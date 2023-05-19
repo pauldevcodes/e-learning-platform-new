@@ -1,3 +1,7 @@
+import { useRef } from "react";
+
+import { useInView } from "framer-motion";
+
 import { styles } from "../../utils/styles";
 
 // assests
@@ -7,8 +11,11 @@ import jobInterview from '../../images/job-interview.png'
 
 const Why = () => {
 
+    const ref = useRef(null)
+    const isInView = useInView(ref);
+
     return (
-        <div className={`${styles.paddingX} pt-7 md:pt-20 flex flex-col items-center gap-y-7 bg-orange-50`}>
+        <div className={`${styles.paddingX} pt-7 md:pt-20 flex flex-col items-center gap-y-7 bg-orange-50 overflow-hidden`}>
             <div>
                 <h1
                     className={`${styles.sectionHeading} bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent`}
@@ -16,9 +23,16 @@ const Why = () => {
                     Why Kingship Technologies
                 </h1>
             </div>
-            <div className=" flex flex-col items-center gap-y-8">
+            <div className=" flex flex-col items-center gap-y-8" ref={ref}>
 
-                <div className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row md:items-center md:gap-x-10">
+                <div
+                    className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row md:items-center md:gap-x-10"
+                    style={{
+                        transform: isInView ? "none" : "translateX(900px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 4s 0.5s"
+                    }}
+                >
                     <div className=" md:basis-1/2">
                         <img src={fastTrack} alt="Fast Track" />
                     </div>
@@ -34,7 +48,14 @@ const Why = () => {
                         </p>
                     </div>
                 </div>
-                <div className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row md:items-center md:gap-x-10">
+                <div
+                    className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row-reverse md:items-center md:gap-x-10"
+                    style={{
+                        transform: isInView ? "none" : "translateX(-900px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 4s 0.5s"
+                    }}
+                >
                     <div className=" md:basis-1/2">
                         <img src={jobInterview} alt="Fast Track" />
                     </div>

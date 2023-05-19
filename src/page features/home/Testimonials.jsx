@@ -4,6 +4,7 @@ import { styles } from "../../utils/styles";
 // library
 import { FaQuoteRight, FaQuoteLeft } from "react-icons/fa"
 
+// assests
 import testimonyOne from "../../images/testimonialOne.jpg"
 import testimonyTwo from "../../images/testimonialTwo.jpg"
 import testimonyThree from "../../images/testimonialThree.jpg"
