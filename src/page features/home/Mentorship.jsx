@@ -12,7 +12,7 @@ import mentorship from '../../images/mentorship.jpg'
 const Mentorship = () => {
 
     return (
-        <div className={`${styles.paddingX} pb-8 flex flex-col-reverse gap-y-8 md:pb-14 lg:flex-row lg:gap-x-8`}>
+        <div className={`${styles.paddingX} mt-7 md:mt-14 pb-8 flex flex-col-reverse gap-y-8 md:pb-14 lg:flex-row lg:gap-x-8`}>
             <div className=" flex flex-col items-center gap-y-5 md:items-start basis-1/2">
                 <h1
                     className={`${styles.sectionHeading} text-center bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:text-start`}

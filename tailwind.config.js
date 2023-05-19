@@ -10,7 +10,7 @@ export default {
         'hero-mobile': "url('/src/images/mobile-hero.jpg')",
         'hero-tablet': "url('/src/images/tablet-hero.jpg')",
         'hero-desktop': "url('/src/images/desktop-hero.jpg')",
-        'benefits-banner': "url('/src/images/kingship banner.jpg')"
+        'benefits-banner': "url('/src/images/kingship banner new.jpg')"
       },
     },
   },
