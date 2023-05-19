@@ -8,7 +8,7 @@ import jobInterview from '../../images/job-interview.png'
 const Why = () => {
 
     return (
-        <div className={`${styles.paddingX} pt-7 md:pt-14 flex flex-col items-center gap-y-10 md:gap-y-20`}>
+        <div className={`${styles.paddingX} pt-7 md:pt-20 flex flex-col items-center gap-y-7 bg-orange-50`}>
             <div>
                 <h1
                     className={`${styles.sectionHeading} bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent`}
@@ -34,22 +34,6 @@ const Why = () => {
                         </p>
                     </div>
                 </div>
-                {/* <div className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row-reverse md:items-center md:gap-x-10">
-                    <div className=" md:basis-1/2">
-                        <img src={industryExpert} alt="Fast Track" />
-                    </div>
-                    <div className=" flex flex-col gap-y-2 md:basis-1/2">
-                        <h4 className=" text-orange-400 uppercase text-sm">
-                            Master a professional cyber security mindset
-                        </h4>
-                        <h2 className=" text-2xl font-semibold">
-                            Learn from the Best
-                        </h2>
-                        <p className=" text-lg text-slate-700">
-                            The best way to learn is from someone who has already been there. They can share their knowledge and experience, help you avoid mistakes, and guide you to success.
-                        </p>
-                    </div>
-                </div> */}
                 <div className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row md:items-center md:gap-x-10">
                     <div className=" md:basis-1/2">
                         <img src={jobInterview} alt="Fast Track" />
