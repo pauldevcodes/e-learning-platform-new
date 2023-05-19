@@ -3,7 +3,30 @@ import { Link } from "react-router-dom";
 // library
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ToggleMenu = ({ isOpen, setIsOpen, links }) => {
+const ToggleMenu = ({ isOpen, setIsOpen }) => {
+
+    const links = [
+        {
+            id: 1,
+            url: "/",
+            link: 'home'
+        },
+        {
+            id: 2,
+            url: "cybersecurity",
+            link: 'cyber security',
+        },
+        {
+            id: 3,
+            url: "security-training",
+            link: 'security plus training',
+        },
+        {
+            id: 4,
+            url: "about",
+            link: 'about'
+        },
+    ]
 
     // animation
     const item = {
@@ -64,7 +87,8 @@ const ToggleMenu = ({ isOpen, setIsOpen, links }) => {
                             })}
                         </ul>
                         <Link
-                            className=' font-["Poppins"] opacity-75 border-2 border-teal-500 rounded px-4 py-1 md:text-sm'
+                            to="register"
+                            className=' font-["Poppins"] opacity-75 border-2 border-orange-500 rounded px-4 py-1 md:text-sm'
                         >
                             Register
                         </Link>

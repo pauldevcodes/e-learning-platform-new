@@ -8,6 +8,9 @@ const Apply = () => {
                 <h3 className=" text-white text-3xl text-center md:text-4xl xl:text-6xl">
                     Start your application today
                 </h3>
+                <p className=" font-semibold text-xl">
+                Next Class Starts 7.31.2023
+                </p>
                 <Link
                     to="register"
                 >

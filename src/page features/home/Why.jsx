@@ -34,7 +34,7 @@ const Why = () => {
                         </p>
                     </div>
                 </div>
-                <div className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row-reverse md:items-center md:gap-x-10">
+                {/* <div className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row-reverse md:items-center md:gap-x-10">
                     <div className=" md:basis-1/2">
                         <img src={industryExpert} alt="Fast Track" />
                     </div>
@@ -49,7 +49,7 @@ const Why = () => {
                             The best way to learn is from someone who has already been there. They can share their knowledge and experience, help you avoid mistakes, and guide you to success.
                         </p>
                     </div>
-                </div>
+                </div> */}
                 <div className=" flex flex-col-reverse gap-y-8 max-w-screen-lg mx-auto md:flex-row md:items-center md:gap-x-10">
                     <div className=" md:basis-1/2">
                         <img src={jobInterview} alt="Fast Track" />

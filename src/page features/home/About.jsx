@@ -29,6 +29,7 @@ const About = () => {
                             <br /><br />
                             At Kingship Technologies, we understand the continuously evolving nature of cybersecurity threats and the critical need for well-trained professionals to protect against them. That's why we've developed a comprehensive training program designed to equip you with the latest tools, techniques, and best practices in the field of cybersecurity.
                         </p>
+                        <br />
                         <Link
                             to="about"
                             className=" bg-orange-500 px-5 py-1 rounded-md w-fit text-white flex items-center gap-x-2 font-medium duration-300 ease-in-out hover:bg-black lg:text-lg"
