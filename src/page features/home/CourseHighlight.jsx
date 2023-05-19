@@ -20,8 +20,8 @@ const CourseHighlight = () => {
             descriptionTwo: "Introduction to Cybersecurity",
             descriptionThree: "Cybersecurity fundamentals",
             descriptionFour: "Threat landscape",
-            url: "cybersecurity"
-            // checkCircle: <CheckCircleIcon />
+            url: "cybersecurity",
+            checkCircle: <CheckCircleIcon width={20} />
         },
         {
             id: 2,
@@ -31,8 +31,8 @@ const CourseHighlight = () => {
             descriptionTwo: "Introduction to Cybersecurity and security+",
             descriptionThree: "Security Threats and Vulnerabilities",
             descriptionFour: "Identity and Access Management",
-            url: "security-training"
-            // checkCircle: <CheckCircleIcon width={15} />
+            url: "security-training",
+            checkCircle: <CheckCircleIcon width={20} />
         }
     ]
     return (
@@ -51,20 +51,20 @@ const CourseHighlight = () => {
                                 <div className="">
                                     <img src={courses.img} alt="course" className=" rounded-md" />
                                 </div>
-                                <div className=" flex flex-col items-center gap-y-4 text-center md:items-start md:text-start">
+                                <div className=" flex flex-col gap-y-4 md:items-start md:text-start">
                                     <h3 className=" font-bold uppercase text-lg lg:text-xl">{courses.title}</h3>
-                                    <div className=" flex flex-col gap-y-2 h-64">
-                                        <p className=" text-sm opacity-75 lg:text-lg flex">
-                                            {courses.description}
+                                    <div className=" flex flex-col gap-y-2 md:h-48 ">
+                                        <p className=" text-sm opacity-75 lg:text-lg">
+                                            - {courses.description}
                                         </p>
                                         <p className=" text-sm opacity-75 lg:text-lg">
-                                            {courses.descriptionTwo}
+                                            - {courses.descriptionTwo}
                                         </p>
                                         <p className=" text-sm opacity-75 lg:text-lg">
-                                            {courses.descriptionThree}
+                                            - {courses.descriptionThree}
                                         </p>
                                         <p className=" text-sm opacity-75 lg:text-lg">
-                                            {courses.descriptionFour}
+                                            - {courses.descriptionFour}
                                         </p>
                                     </div>
                                     <Link

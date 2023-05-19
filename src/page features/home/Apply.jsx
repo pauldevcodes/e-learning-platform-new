@@ -3,8 +3,8 @@ import { styles } from "../../utils/styles";
 
 const Apply = () => {
     return (
-        <>
-            <div className={`${styles.paddingX} py-7 md:py-14 bg-gradient-to-r from-orange-500 to-blue-500 flex flex-col items-center gap-y-5 md:gap-y-14`}>
+        <section className={`${styles.paddingX} my-7 md:my-14`}>
+            <div className={` py-7 md:py-14 bg-gradient-to-r from-orange-500 to-blue-500 flex flex-col items-center gap-y-5 rounded md:gap-y-14`}>
                 <h3 className=" text-white text-3xl text-center md:text-4xl xl:text-6xl">
                     Start your application today
                 </h3>
@@ -19,7 +19,7 @@ const Apply = () => {
                     </button>
                 </Link>
             </div>
-        </>
+        </section>
     );
 }
 

@@ -11,7 +11,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 const About = () => {
     return (
-        <div className={`${styles.paddingX} ${styles.paddingY}`}>
+        <div className={`${styles.paddingX} my-7 md:my-14`}>
             <div className=' flex flex-col items-center'>
                 <h1
                     className={`${styles.sectionHeading} mb-10 bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent lg:mb-16`}
