@@ -58,14 +58,14 @@ const CourseHighlight = () => {
                                             {courses.description}
                                         </p>
                                         <br />
-                                        <p className=" text-sm opacity-75 lg:text-lg">
-                                            - {courses.descriptionTwo}
+                                        <p className=" text-sm opacity-75 flex items-center gap-x-1 lg:text-lg">
+                                            {courses.checkCircle} {courses.descriptionTwo}
                                         </p>
-                                        <p className=" text-sm opacity-75 lg:text-lg">
-                                            - {courses.descriptionThree}
+                                        <p className=" text-sm opacity-75 flex items-center gap-x-1 lg:text-lg">
+                                            {courses.checkCircle} {courses.descriptionThree}
                                         </p>
-                                        <p className=" text-sm opacity-75 lg:text-lg">
-                                            - {courses.descriptionFour}
+                                        <p className=" text-sm opacity-75 flex items-center gap-x-1 lg:text-lg">
+                                            {courses.checkCircle} {courses.descriptionFour}
                                         </p>
                                     </div>
                                     <Link
