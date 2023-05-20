@@ -25,7 +25,7 @@ const Mentorship = () => {
                     Our Mentorship Program
                 </h1>
 
-                <div className=" flex flex-col items-center gap-y-4 md:items-start">
+                <div className=" flex flex-col gap-y-4 items-start">
                     <div className="  flex flex-col gap-y-2" ref={ref}>
                         <p
                             className=" text-sm opacity-75 font-semibold lg:text-lg"
