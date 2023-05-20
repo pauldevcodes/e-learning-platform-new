@@ -4,12 +4,13 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import { Suspense, lazy } from "react";
+import { Circles } from "react-loader-spinner";
 
 // import Home from "./pages/Home";
 const Home = lazy(() => import('./pages/Home'))
 import Error from "./pages/Error";
-import CyberSecurity from "./pages/CyberSecurity";
-import Security from "./pages/Security";
+const CyberSecurity = lazy(() => import('./pages/CyberSecurity'))
+const Security = lazy(() => import('./pages/Security'))
 import Faq from "./pages/Faq";
 
 const router = createBrowserRouter([
@@ -20,17 +21,48 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Suspense fallback={<p>loading..</p>}>
-          <Home />
-        </Suspense>,
+        element:
+          <Suspense fallback={<Circles
+            height="80"
+            width="80"
+            color="#f97316"
+            ariaLabel="circles-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+          />}>
+            <Home />
+          </Suspense>,
       },
       {
         path: "cybersecurity",
-        element: <CyberSecurity />
+        element: 
+        <Suspense fallback={<Circles
+          height="80"
+          width="80"
+          color="#f97316"
+          ariaLabel="circles-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+        />}>
+          <CyberSecurity />
+        </Suspense>,
       },
       {
         path: "security-training",
-        element: <Security />
+        element: 
+        <Suspense fallback={<Circles
+          height="80"
+          width="80"
+          color="#f97316"
+          ariaLabel="circles-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+        />}>
+          <Security />
+        </Suspense>,
       },
       {
         path: "faqs",
