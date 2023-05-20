@@ -3,8 +3,10 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import { Suspense, lazy } from "react";
 
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+const Home = lazy(() => import('./pages/Home'))
 import Error from "./pages/Error";
 import CyberSecurity from "./pages/CyberSecurity";
 import Security from "./pages/Security";
@@ -18,7 +20,9 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <Suspense fallback={<p>loading..</p>}>
+          <Home />
+        </Suspense>,
       },
       {
         path: "cybersecurity",
