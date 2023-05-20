@@ -67,7 +67,7 @@ const Testimonials = () => {
                 >
                     {testimonies.map(({ id, img, p, h4 }) => {
                         return (
-                            <SwiperSlide key={id}>
+                            <SwiperSlide key={id} className=" pb-10">
                                 <div className=" flex flex-col items-center gap-y-5 max-w-screen-md mx-auto boxShadow p-5 rounded-md ">
                                     <div className=" w-[100px] h-[100px] overflow-hidden rounded-[50%]">
                                         <img src={img} alt="" className=" w-full h-full object-cover" />
