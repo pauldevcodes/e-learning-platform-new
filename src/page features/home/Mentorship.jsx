@@ -32,7 +32,7 @@ const Mentorship = () => {
                             style={{
                                 transform: isInView ? "none" : "translateX(-300px)",
                                 opacity: isInView ? 1 : 0,
-                                transition: "all 5s 0.5s"
+                                transition: "all 3s 0.5s"
                             }}
                         >
                             This is a 5 week mentorship program in Career Development.
@@ -42,7 +42,7 @@ const Mentorship = () => {
                             style={{
                                 transform: isInView ? "none" : "translateX(-300px)",
                                 opacity: isInView ? 1 : 0,
-                                transition: "all 5s 0.5s"
+                                transition: "all 3s 0.5s"
                             }}
                         >
                             We help guide you in your professional career especially if you need next steps before or after getting certified.
@@ -52,7 +52,7 @@ const Mentorship = () => {
                             style={{
                                 transform: isInView ? "none" : "translateX(-300px)",
                                 opacity: isInView ? 1 : 0,
-                                transition: "all 5s 0.5s"
+                                transition: "all 3s 0.5s"
                             }}
                         >
                             Our instructors will provide you both technical and soft skills, and guidance on developing teamwork, communication, network building
@@ -65,7 +65,7 @@ const Mentorship = () => {
                         style={{
                             transform: isInView ? "none" : "translateX(-300px)",
                             opacity: isInView ? 1 : 0,
-                            transition: "all 5s 0.5s"
+                            transition: "all 3s 0.5s"
                         }}
                     >
                         More

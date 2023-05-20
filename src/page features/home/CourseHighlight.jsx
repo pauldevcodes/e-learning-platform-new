@@ -61,7 +61,7 @@ const CourseHighlight = () => {
                                     className=" flex flex-col gap-y-4 md:items-start md:text-start"
                                     style={{
                                         opacity: isInView ? 1 : 0,
-                                        transition: "all 5s 0.5s"
+                                        transition: "all 3s 0.5s"
                                     }}
                                 >
                                     <h3
