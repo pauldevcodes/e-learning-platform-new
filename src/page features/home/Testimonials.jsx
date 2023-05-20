@@ -59,16 +59,16 @@ const Testimonials = () => {
                         delay: 3500,
                         disableOnInteraction: false,
                     }}
-                    // pagination={{
-                    //     clickable: true,
-                    // }}
-                    modules={[Autoplay]}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Autoplay, Pagination]}
                     className=" grid grid-cols-1 items-center gap-y-5 md:grid-cols-2 md:items-stretch md:gap-x-5 lg:grid-cols-3"
                 >
                     {testimonies.map(({ id, img, p, h4 }) => {
                         return (
-                            <SwiperSlide>
-                                <div key={id} className=" flex flex-col items-center gap-y-5 max-w-screen-md mx-auto boxShadow p-5 rounded-md ">
+                            <SwiperSlide key={id}>
+                                <div className=" flex flex-col items-center gap-y-5 max-w-screen-md mx-auto boxShadow p-5 rounded-md ">
                                     <div className=" w-[100px] h-[100px] overflow-hidden rounded-[50%]">
                                         <img src={img} alt="" className=" w-full h-full object-cover" />
                                     </div>
