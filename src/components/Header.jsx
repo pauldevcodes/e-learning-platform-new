@@ -124,6 +124,7 @@ const Header = () => {
                                                 Security Training
                                             </Link>
                                             <Link
+                                                to="mentorship"
                                                 className=' text-white hover:border-b-2 hover:border-b-orange-500'
                                             >
                                                 Mentorship
@@ -135,7 +136,7 @@ const Header = () => {
                         </AnimatePresence>
                         <li>
                             <Link
-                                // to="about"
+                                to="about"
                                 className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
                             >
                                 About
