@@ -35,10 +35,10 @@ const Footer = () => {
                         <Link to="register" className=''>Register</Link>
                     </li>
                     <li className=' text-base leading-[22px] text-gray-800'>
-                        <Link to="" className=''>Consultation</Link>
+                        <Link className=''>Consultation</Link>
                     </li>
                     <li className=' text-base leading-[22px] text-gray-800'>
-                        <Link to="" className=''>Blog</Link>
+                        <Link className=''>Blog</Link>
                     </li>
                 </ul>
 
@@ -50,7 +50,7 @@ const Footer = () => {
                         <Link to="about" className=''>Our Story</Link>
                     </li>
                     <li className=' text-base leading-[22px] text-gray-800'>
-                        <Link to="instructors" className=''>Instructors</Link>
+                        <Link className=''>Instructors</Link>
                     </li>
                 </ul>
 
@@ -59,13 +59,13 @@ const Footer = () => {
                         Help
                     </li>
                     <li className=' text-base leading-[22px] text-gray-800'>
-                        <Link to="contact" className=''>Contact Us</Link>
+                        <Link className=''>Contact Us</Link>
                     </li>
                     <li className=' text-base leading-[22px] text-gray-800'>
                         <Link to="faqs" className=''>FAQs</Link>
                     </li>
                     <li className=' text-base leading-[22px] text-gray-800'>
-                        <Link to="privacy" className=''>Privacy Policy</Link>
+                        <Link className=''>Privacy Policy</Link>
                     </li>
                 </ul>
 
