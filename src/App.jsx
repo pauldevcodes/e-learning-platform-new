@@ -8,9 +8,11 @@ const App = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <div className=" h-screen">
+        <Outlet />
+      </div>
       <Footer />
-      
+
     </>
   );
 }

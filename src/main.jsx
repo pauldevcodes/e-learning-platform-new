@@ -22,47 +22,59 @@ const router = createBrowserRouter([
       {
         index: true,
         element:
-          <Suspense fallback={<Circles
-            height="80"
-            width="80"
-            color="#f97316"
-            ariaLabel="circles-loading"
-            wrapperStyle={{}}
-            wrapperClass=""
-            visible={true}
-          />}>
+          <Suspense fallback={
+            <div className=" h-screen flex flex-col items-center justify-center">
+              <Circles
+                height="80"
+                width="80"
+                color="#f97316"
+                ariaLabel="circles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+              />
+            </div>}
+          >
             <Home />
           </Suspense>,
       },
       {
         path: "cybersecurity",
-        element: 
-        <Suspense fallback={<Circles
-          height="80"
-          width="80"
-          color="#f97316"
-          ariaLabel="circles-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-        />}>
-          <CyberSecurity />
-        </Suspense>,
+        element:
+          <Suspense fallback={
+            <div className=" h-screen flex flex-col items-center justify-center">
+              <Circles
+                height="80"
+                width="80"
+                color="#f97316"
+                ariaLabel="circles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+              />
+            </div>
+          }>
+            <CyberSecurity />
+          </Suspense>,
       },
       {
         path: "security-training",
-        element: 
-        <Suspense fallback={<Circles
-          height="80"
-          width="80"
-          color="#f97316"
-          ariaLabel="circles-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-        />}>
-          <Security />
-        </Suspense>,
+        element:
+          <Suspense fallback={
+            <div className=" h-screen flex flex-col items-center justify-center">
+              <Circles
+                height="80"
+                width="80"
+                color="#f97316"
+                ariaLabel="circles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+              />
+            </div>
+          }>
+            <Security />
+          </Suspense>,
       },
       {
         path: "faqs",
