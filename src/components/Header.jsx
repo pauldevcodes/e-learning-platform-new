@@ -135,7 +135,7 @@ const Header = () => {
                         </AnimatePresence>
                         <li>
                             <Link
-                                to="about"
+                                // to="about"
                                 className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
                             >
                                 About
