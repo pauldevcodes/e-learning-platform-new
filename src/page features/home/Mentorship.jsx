@@ -55,13 +55,13 @@ const Mentorship = () => {
                                 transition: "all 3s 0.5s"
                             }}
                         >
-                            Our instructors will provide you both technical and soft skills, and guidance on developing teamwork, communication, network building
-                        </p>.
+                            Our instructors will provide you both technical and soft skills, and guidance on developing teamwork, communication, network building.
+                        </p>
                     </div>
 
                     <Link
-                        to="mentorship"
-                        className="bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 duration-300 ease-in-out hover:bg-black"
+                        // to="mentorship"
+                        className="bg-orange-500 px-5 py-1 rounded-md text-white flex items-center gap-x-2 duration-300 ease-in-out hover:bg-black lg:mt-20"
                         style={{
                             transform: isInView ? "none" : "translateX(-300px)",
                             opacity: isInView ? 1 : 0,

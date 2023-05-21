@@ -12,7 +12,7 @@ const Apply = () => {
                 Next Class Starts 7.31.2023
                 </p>
                 <Link
-                    to="register"
+                    // to="register"
                 >
                     <button className=" bg-transparent border-2 border-white py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-black hover:text-black">
                         register

@@ -23,7 +23,7 @@ const ToggleMenu = ({ isOpen, setIsOpen }) => {
         },
         {
             id: 4,
-            url: "about",
+            // url: "about",
             link: 'about'
         },
     ]
@@ -87,7 +87,7 @@ const ToggleMenu = ({ isOpen, setIsOpen }) => {
                             })}
                         </ul>
                         <Link
-                            to="register"
+                            // to="register"
                             className=' font-["Poppins"] opacity-75 border-2 border-orange-500 rounded px-4 py-1 md:text-sm'
                         >
                             Register

@@ -124,7 +124,6 @@ const Header = () => {
                                                 Security Training
                                             </Link>
                                             <Link
-                                                to="mentorship"
                                                 className=' text-white hover:border-b-2 hover:border-b-orange-500'
                                             >
                                                 Mentorship
@@ -149,7 +148,7 @@ const Header = () => {
                             className=' border-2 bg-orange-500 border-orange-500 rounded px-4 py-1 hover:bg-black hover:border-black hover:shadow-md'
                         >
                             <Link
-                                to="register"
+                                // to="register"
                                 className=' text-white md:text-sm'
                             >
                                 Register
