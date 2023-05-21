@@ -23,7 +23,7 @@ const ToggleMenu = ({ isOpen, setIsOpen }) => {
         },
         {
             id: 4,
-            // url: "about",
+            url: "about",
             link: 'about'
         },
     ]
