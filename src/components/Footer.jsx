@@ -7,7 +7,25 @@ import phone from '../images/icon-phone.svg'
 import { Link } from 'react-router-dom';
 import { styles } from '../utils/styles'
 
+// library
+import { FaYoutube, FaFacebookF, FaTwitter } from 'react-icons/fa'
+
 const Footer = () => {
+    const socials = [
+        {
+            id: 1,
+            socialMedia: <FaYoutube />
+        },
+        {
+            id: 2,
+            socialMedia: <FaFacebookF />
+        },
+        {
+            id: 3,
+            socialMedia: <FaTwitter />
+        }
+    ]
+
     return (
         <footer className={`${styles.paddingX} py-1 flex flex-col gap-y-8`}>
             <img src={logo} alt="logo" className=' w-14' />
@@ -24,6 +42,18 @@ const Footer = () => {
                         <p className=' font-["Open Sans"] text-base text-gray-800'>
                             example@fylo.com
                         </p>
+                    </div>
+                    <div className=" flex flex-row items-center gap-x-4">
+                        {socials.map(({ id, socialMedia }) => {
+                            return (
+                                <Link
+                                    key={id}
+                                    className=" text-2xl"
+                                >
+                                    {socialMedia}
+                                </Link>
+                            )
+                        })}
                     </div>
                 </div>
 
@@ -68,12 +98,6 @@ const Footer = () => {
                         <Link className=''>Privacy Policy</Link>
                     </li>
                 </ul>
-
-                <div className=' flex flex-row gap-x-[10px] justify-center'>
-                    {/* <img src={facebook} alt="facebook" />
-                    <img src={twitter} alt="twitter" />
-                    <img src={instagram} alt="instagram" /> */}
-                </div>
             </div>
             <p className=' text-center'>
                 Copyright &copy; Kingship Technologies 2023

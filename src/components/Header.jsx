@@ -15,9 +15,9 @@ import { styles } from '../utils/styles'
 import logo from '../images/logo.png'
 import ToggleMenu from './ToggleMenu';
 
-// pages
-import Login from '../pages/Login';
-import Signup from '../pages/Signup';
+// // pages
+// import Login from '../pages/Login';
+// import Signup from '../pages/Signup';
 
 const Header = () => {
 
@@ -56,12 +56,6 @@ const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false)
     const [arrowMenu, setArrowMenu] = useState(false)
-    const [menu, setMenu] = useState();
-    const [isLoggingIn, setIsLoggingIn] = useState(false);
-
-    const handleSwitchPage = () => {
-        setIsLoggingIn(!isLoggingIn);
-    };
 
     const navToggle = () => {
         setIsOpen(!isOpen)
@@ -157,14 +151,6 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-
-                {menu &&
-                    (isLoggingIn ? (
-                        <Login Close={setMenu} onSwitch={handleSwitchPage} />
-                    ) : (
-                        <Signup Close={setMenu} onSwitch={handleSwitchPage} />
-                    ))}
-
 
                 <div className=' md:hidden text-slate-500' onClick={navToggle}>
                     {isOpen ? <XMarkIcon width={30} /> : <Bars3BottomRightIcon width={30} />}

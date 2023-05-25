@@ -4,7 +4,7 @@ import { styles } from '../../utils/styles';
 const Instructors = () => {
     return ( 
         <section className=" grid grid-cols-1 lg:grid-cols-2">
-            <img src={instructors} alt="group of instructors" className=' h-full' />
+            <img src={instructors} alt="group of instructors" className=' w-full h-full' />
             <div className={`${styles.paddingX} py-7 md:py-14 bg-black flex flex-col gap-y-5 lg:gap-y-10`}>
                 <h2 className={`${styles.sectionHeading} text-white`}>
                     Instructors

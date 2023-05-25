@@ -1,24 +1,7 @@
 import { Link } from "react-router-dom";
 import { styles } from "../../utils/styles";
 
-// library
-import { FaYoutube, FaFacebookF, FaTwitter } from 'react-icons/fa'
-
 const Kingship = () => {
-    const socials = [
-        {
-            id: 1,
-            socialMedia: <FaYoutube />
-        },
-        {
-            id: 2,
-            socialMedia: <FaFacebookF />
-        },
-        {
-            id: 3,
-            socialMedia: <FaTwitter />
-        }
-    ]
 
     return (
         <div className={`${styles.paddingX} ${styles.paddingY} relative bg-benefits-banner bg-no-repeat bg-fixed bg-cover flex flex-col items-center gap-y-10`}>
@@ -27,18 +10,7 @@ const Kingship = () => {
                 <h1 className=" text-3xl font-bold text-white">
                     Why Choose Us
                 </h1>
-                <div className=" flex flex-row items-center gap-x-4">
-                    {socials.map(({ id, socialMedia }) => {
-                        return (
-                            <Link
-                                key={id}
-                                className=" text-2xl text-orange-600"
-                            >
-                                {socialMedia}
-                            </Link>
-                        )
-                    })}
-                </div>
+                {/*  */}
             </div>
 
             <div className=" flex flex-col items-center gap-y-5 lg:flex-row lg:gap-x-20 z-30">
