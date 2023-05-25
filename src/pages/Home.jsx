@@ -15,7 +15,7 @@ import Instructors from "../page features/home/Instructors";
 const Home = () => {
 
     return (
-        <>
+        <div className=" homeBody">
             <Banner />
             <Why />
             <CourseHighlight />
@@ -27,7 +27,7 @@ const Home = () => {
             <Apply />
             <About />
             <Contact />
-        </>
+        </div>
     );
 }
 
