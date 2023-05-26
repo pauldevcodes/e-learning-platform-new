@@ -15,8 +15,8 @@ const Security = lazy(() => import('./pages/Security'))
 import Faq from "./pages/Faq";
 import Mentorship from "./pages/Mentorship";
 import Register from "./pages/Register";
-import Welcome from "./page features/register/Welcome";
-import Signup from "./page features/register/Signup";
+const Welcome = lazy(() => import('./page features/register/Welcome'))
+const Signup = lazy(() => import('./page features/register/Signup'))
 
 const router = createBrowserRouter([
   {
@@ -116,12 +116,42 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Welcome />
+        element:
+          <Suspense fallback={
+            <div className=" h-screen flex flex-col items-center justify-center">
+              <Circles
+                height="80"
+                width="80"
+                color="#f97316"
+                ariaLabel="circles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+              />
+            </div>
+          }>
+            <Welcome />
+          </Suspense>
       },
       {
         path: "signup",
-        element: <Signup />
-      }   
+        element:
+          <Suspense fallback={
+            <div className=" h-screen flex flex-col items-center justify-center">
+              <Circles
+                height="80"
+                width="80"
+                color="#f97316"
+                ariaLabel="circles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+              />
+            </div>
+          }>
+            <Signup />
+          </Suspense>
+      }
     ]
   }
 ]);
