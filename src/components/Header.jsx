@@ -15,10 +15,6 @@ import { styles } from '../utils/styles'
 import logo from '../images/logo.png'
 import ToggleMenu from './ToggleMenu';
 
-// // pages
-// import Login from '../pages/Login';
-// import Signup from '../pages/Signup';
-
 const Header = () => {
 
     // animation
@@ -143,7 +139,7 @@ const Header = () => {
                             className=' border-2 bg-orange-500 border-orange-500 rounded px-4 py-1 hover:bg-black hover:border-black hover:shadow-md'
                         >
                             <Link
-                                // to="register"
+                                to="register"
                                 className=' text-white md:text-sm'
                             >
                                 Register

@@ -6,7 +6,7 @@ import "./index.css";
 import { Suspense, lazy } from "react";
 import { Circles } from "react-loader-spinner";
 
-// import Home from "./pages/Home";
+
 const Home = lazy(() => import('./pages/Home'))
 import Error from "./pages/Error";
 const About = lazy(() => import('./pages/About'))
@@ -14,6 +14,9 @@ const CyberSecurity = lazy(() => import('./pages/CyberSecurity'))
 const Security = lazy(() => import('./pages/Security'))
 import Faq from "./pages/Faq";
 import Mentorship from "./pages/Mentorship";
+import Register from "./pages/Register";
+import Welcome from "./page features/register/Welcome";
+import Signup from "./page features/register/Signup";
 
 const router = createBrowserRouter([
   {
@@ -107,6 +110,20 @@ const router = createBrowserRouter([
       }
     ],
   },
+  {
+    path: "register",
+    element: <Register />,
+    children: [
+      {
+        index: true,
+        element: <Welcome />
+      },
+      {
+        path: "signup",
+        element: <Signup />
+      }   
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

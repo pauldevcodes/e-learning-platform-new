@@ -87,10 +87,10 @@ const Contact = () => {
                     <Form
                         className=" flex flex-col gap-3 max-w-screen-md mx-auto lg:gap-y-8"
                     >
-                        <input type="text" name="name" placeholder="Name" className=" rounded-md" />
-                        <input type="email" name="email" placeholder="Email" className=" rounded-md" />
-                        <input type="number" name="phoneNo" placeholder="Phone Number" className=" rounded-md" />
-                        <textarea name="message" placeholder=" Type your message here" className="w-full rounded-md"></textarea>
+                        <input type="text" name="name" placeholder="Name" className=" form-input rounded-md" />
+                        <input type="email" name="email" placeholder="Email" className=" form-input rounded-md" />
+                        <input type="number" name="phoneNo" placeholder="Phone Number" className=" form-input rounded-md" />
+                        <textarea name="message" placeholder=" Type your message here" className="w-full form-textarea rounded-md"></textarea>
                         <button className=" bg-orange-500 text-white w-fit py-2 px-6 rounded-md duration-300 ease-in-out hover:bg-black">
                             Submit
                         </button>
