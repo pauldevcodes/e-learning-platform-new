@@ -136,16 +136,10 @@ const Header = () => {
 
                     <div className='md:flex md:flex-row md:items-center md:gap-x-5'>
                         <Link
-                            to="signin"
-                            className=' border-2 bg-transparent border-orange-500 rounded px-4 py-2 text-orange-500 md:text-sm hover:bg-black hover:text-white hover:border-black hover:shadow-md'
-                        >
-                            Login
-                        </Link>
-                        <Link
-                            to="signup"
+                            to="register"
                             className=' border-2 bg-orange-500 border-orange-500 rounded px-4 py-2 text-white md:text-sm hover:bg-black hover:border-black hover:shadow-md'
                         >
-                            Sign up
+                            Register
                         </Link>
                     </div>
                 </div>

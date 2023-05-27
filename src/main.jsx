@@ -110,68 +110,68 @@ const router = createBrowserRouter([
         element: <Faq />
       },
       {
-        path: "signup",
-        element:
-          <Suspense fallback={
-            <div className=" h-screen flex flex-col items-center justify-center">
-              <Circles
-                height="80"
-                width="80"
-                color="#f97316"
-                ariaLabel="circles-loading"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={true}
-              />
-            </div>
-          }>
-            <Signup />
-          </Suspense>
-      },
-      {
-        path: "signin",
-        element:
-        <Suspense fallback={
-          <div className=" h-screen flex flex-col items-center justify-center">
-            <Circles
-              height="80"
-              width="80"
-              color="#f97316"
-              ariaLabel="circles-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            />
-          </div>
-        }>
-          <Signin />
-        </Suspense>
+        path: "register",
+        element: <Register />,
+        children: [
+          {
+            index: true,
+            element:
+              <Suspense fallback={
+                <div className=" h-screen flex flex-col items-center justify-center">
+                  <Circles
+                    height="80"
+                    width="80"
+                    color="#f97316"
+                    ariaLabel="circles-loading"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                  />
+                </div>
+              }>
+                <Welcome />
+              </Suspense>
+          },
+          {
+            path: "signup",
+            element:
+              <Suspense fallback={
+                <div className=" h-screen flex flex-col items-center justify-center">
+                  <Circles
+                    height="80"
+                    width="80"
+                    color="#f97316"
+                    ariaLabel="circles-loading"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                  />
+                </div>
+              }>
+                <Signup />
+              </Suspense>
+          },
+          {
+            path: "signup/signin",
+            element:
+            <Suspense fallback={
+              <div className=" h-screen flex flex-col items-center justify-center">
+                <Circles
+                  height="80"
+                  width="80"
+                  color="#f97316"
+                  ariaLabel="circles-loading"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                  visible={true}
+                />
+              </div>
+            }>
+              <Signin />
+            </Suspense>
+          }
+        ]
       }
-      // {
-      //   path: "register",
-      //   element: <Register />,
-      //   children: [
-      //     {
-      //       index: true,
-      //       element:
-      //         <Suspense fallback={
-      //           <div className=" h-screen flex flex-col items-center justify-center">
-      //             <Circles
-      //               height="80"
-      //               width="80"
-      //               color="#f97316"
-      //               ariaLabel="circles-loading"
-      //               wrapperStyle={{}}
-      //               wrapperClass=""
-      //               visible={true}
-      //             />
-      //           </div>
-      //         }>
-      //           <Welcome />
-      //         </Suspense>
-      //     },
-      //   ]
-      // }
     ],
   },
 ]);
