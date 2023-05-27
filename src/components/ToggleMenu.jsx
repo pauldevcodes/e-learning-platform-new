@@ -23,6 +23,11 @@ const ToggleMenu = ({ isOpen, setIsOpen }) => {
         },
         {
             id: 4,
+            url: "mentorship",
+            link: "mentorship"
+        },
+        {
+            id: 5,
             url: "about",
             link: 'about'
         },
@@ -55,7 +60,7 @@ const ToggleMenu = ({ isOpen, setIsOpen }) => {
                         animate={{ height: "100vh", opacity: 1 }}
                         transition={{ duration: .3 }}
                         exit="exit"
-                        className=' bg-black p-10 text-white fixed w-full top-20 z-50 h-screen flex flex-col items-center gap-y-5 md:hidden'
+                        className=' bg-black p-10 text-white fixed w-full top-20 z-50 h-screen flex flex-col items-center gap-y-5 lg:hidden'
                     >
                         <ul className='flex flex-col items-center gap-y-5'>
                             {links.map(({ id, link, url }) => {
@@ -87,16 +92,19 @@ const ToggleMenu = ({ isOpen, setIsOpen }) => {
                             })}
                         </ul>
                         <Link
-                            to="register"
+                            to="signin"
+                            onClick={handleToggle}
                             className=' font-["Poppins"] opacity-75 border-2 border-orange-500 rounded px-4 py-1 md:text-sm'
                         >
-                            Register
+                            Login
                         </Link>
-                        {/* <Link
-                            className=' font-["Poppins"] text-white opacity-75 bg-teal-500 border-2 border-teal-500 rounded px-4 py-1 md:text-sm'
+                        <Link
+                            to="signup"
+                            onClick={handleToggle}
+                            className=' font-["Poppins"] text-white opacity-75 bg-orange-500 border-2 border-orange-500 rounded px-4 py-1 md:text-sm'
                         >
-                            Live courses
-                        </Link> */}
+                            Sign Up
+                        </Link>
                     </motion.div>
                 )}
             </AnimatePresence>

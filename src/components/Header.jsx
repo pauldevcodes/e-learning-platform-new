@@ -67,8 +67,8 @@ const Header = () => {
                     <img src={logo} alt="logo" className=' w-14' />
                 </Link>
 
-                <div className=' hidden md:flex md:flex-row md:items-center md:gap-x-10'>
-                    <ul className=' md:flex md:items-center md:gap-x-8'>
+                <div className=' hidden lg:flex lg:flex-row lg:items-center lg:gap-x-10'>
+                    <ul className=' lg:flex lg:items-center lg:gap-x-8'>
                         <li>
                             <Link
                                 to="/"
@@ -77,7 +77,31 @@ const Header = () => {
                                 Home
                             </Link>
                         </li>
-                        <AnimatePresence>
+                        <li>
+                            <Link
+                                to="cybersecurity"
+                                className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
+                            >
+                                Cyber Security
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="security-training"
+                                className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
+                            >
+                                Security Training
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="mentorship"
+                                className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
+                            >
+                                Mentorship
+                            </Link>
+                        </li>
+                        {/* <AnimatePresence>
                             <li className=' flex items-center gap-x-1 cursor-pointer' onClick={dropDown}>
                                 <span className="capitalize opacity-75">
                                     Training
@@ -123,7 +147,7 @@ const Header = () => {
                                     )}
                                 </span>
                             </li>
-                        </AnimatePresence>
+                        </AnimatePresence> */}
                         <li>
                             <Link
                                 to="about"
@@ -133,18 +157,24 @@ const Header = () => {
                             </Link>
                         </li>
                     </ul>
-
-                    <div className='md:flex md:flex-row md:items-center md:gap-x-5'>
-                        <Link
-                            to="register"
-                            className=' border-2 bg-orange-500 border-orange-500 rounded px-4 py-2 text-white md:text-sm hover:bg-black hover:border-black hover:shadow-md'
-                        >
-                            Register
-                        </Link>
-                    </div>
                 </div>
 
-                <div className=' md:hidden text-slate-500' onClick={navToggle}>
+                <div className=' hidden lg:flex lg:flex-row lg:items-center lg:gap-x-5'>
+                    <Link
+                        to="signin"
+                        className=' border-2 bg-transparent border-orange-500 rounded px-4 py-2 text-orange-500 lg:text-sm hover:bg-black hover:text-white hover:border-black hover:shadow-md'
+                    >
+                        Login
+                    </Link>
+                    <Link
+                        to="signup"
+                        className=' border-2 bg-orange-500 border-orange-500 rounded px-4 py-2 text-white lg:text-sm hover:bg-black hover:border-black hover:shadow-md'
+                    >
+                        Sign up
+                    </Link>
+                </div>
+
+                <div className=' lg:hidden text-slate-500' onClick={navToggle}>
                     {isOpen ? <XMarkIcon width={30} /> : <Bars3BottomRightIcon width={30} />}
                 </div>
             </nav>
