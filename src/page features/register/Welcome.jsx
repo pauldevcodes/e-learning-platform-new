@@ -24,14 +24,14 @@ const Welcome = () => {
                             Get Started
                         </button>
                     </Link>
-                    <Link
+                    {/* <Link
                         to="signin"
                         className=' bg-transparent w-full py-2 rounded-lg border-2 border-orange-500 duration-200 ease-in-out text-center text-orange-500 lg:hover:text-white lg:hover:bg-orange-500'
                     >
                         <button>
                             Already have an account
                         </button>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>

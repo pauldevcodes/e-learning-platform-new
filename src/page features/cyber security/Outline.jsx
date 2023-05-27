@@ -30,14 +30,14 @@ const Outline = () => {
                         <span>$150,000</span>
                     </span>
                 </div>
-                <Link
+                {/* <Link
                     to="register"
                     className=" z-20"
                 >
                     <button className=" bg-transparent border-2 border-white py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-orange-500 hover:text-orange-500">
                         register
                     </button>
-                </Link>
+                </Link> */}
             </div>
         </>
     );

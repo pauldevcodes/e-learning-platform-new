@@ -152,7 +152,7 @@ const router = createBrowserRouter([
               </Suspense>
           },
           {
-            path: "signin",
+            path: "signup/signin",
             element:
             <Suspense fallback={
               <div className=" h-screen flex flex-col items-center justify-center">
