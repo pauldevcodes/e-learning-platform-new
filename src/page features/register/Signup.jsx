@@ -32,7 +32,7 @@ const Signup = () => {
                     </div>
                     <div className=' flex items-center gap-x-5'>
                         <input type="checkbox" className=' form-checkbox' name='checkbox' required />
-                        <label htmlFor='checkbox' className=' text-sm text-gray-500'>
+                        <label htmlFor='checkbox' className=' text-sm lg:text-base text-gray-500'>
                             By signing up, you agree to our <Link className=' text-orange-500'>terms & conditions</Link>
                         </label>
                     </div>
@@ -40,6 +40,10 @@ const Signup = () => {
                         Continue
                     </button>
                 </Form>
+
+                <p className=' text-sm text-gray-500 text-center lg:text-base'>
+                    Already have an account? <Link to="signin" className=' text-orange-500'>Login</Link>
+                </p>
             </div>
         </div>
     );

@@ -8,22 +8,26 @@ const Topics = () => {
                 Topics Covered
             </h3>
 
-            <div className=" flex flex-col gap-y-2 lg:flex-row lg:gap-x-10">
+            <div className=" flex flex-col gap-y-2 ">
                 <p className=" flex items-start gap-x-1 text-white">
                     <CheckCircleIcon width={20} color="white" opacity={0.7} />
-                    HTML
+                    Attacks, threats and Vulnerabilities
                 </p>
                 <p className=" flex items-start gap-x-1 text-white">
                     <CheckCircleIcon width={20} color="white" opacity={0.7} />
-                    Basics
+                    Architecture and Design
                 </p>
                 <p className=" flex items-start gap-x-1 text-white">
                     <CheckCircleIcon width={20} color="white" opacity={0.7} />
-                    Intermediate
+                    Implementation of controls
                 </p>
                 <p className=" flex items-start gap-x-1 text-white">
                     <CheckCircleIcon width={20} color="white" opacity={0.7} />
-                    Expert
+                    Operations and incident response
+                </p>
+                <p className=" flex items-start gap-x-1 text-white">
+                    <CheckCircleIcon width={20} color="white" opacity={0.7} />
+                    Governance, Risk and Compliance
                 </p>
             </div>
 
