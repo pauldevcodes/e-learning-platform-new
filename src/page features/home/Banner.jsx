@@ -30,7 +30,7 @@ const Banner = () => {
                         </p>
                         <div className=" flex flex-col items-center gap-y-5 w-full mb-5 md:flex-row md:justify-center md:gap-x-5">
                             <Link
-                                to="mentorship"
+                                // to="mentorship"
                                 className=" bg-black px-4 py-2 rounded text-center text-white border-2 border-black w-40 md:text-xl hover:opacity-90"
                             >
                                 Mentorship
