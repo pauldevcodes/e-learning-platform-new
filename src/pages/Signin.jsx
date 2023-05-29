@@ -19,7 +19,7 @@ const Signin = () => {
                 </h1>
 
                 <Form
-                    className=' flex flex-col gap-y-5'
+                    className=' flex flex-col items-center gap-y-5'
                 >
                     <div className=' flex flex-row items-center gap-x-8 border-b-2 border-gray-500 py-2 w-full'>
                         <EnvelopeIcon width={25} className=' text-gray-500' />
@@ -29,8 +29,12 @@ const Signin = () => {
                         <LockClosedIcon width={25} className=' text-gray-500' />
                         <input type="password" className=' bg-transparent border-0 text-xl text-gray-500 w-full focus:outline-0' placeholder='Password' />
                     </div>
-                    <button className=' bg-orange-500 py-2 rounded-lg text-white font-medium mt-10'>
+                    <button className=' bg-orange-500 py-2 rounded-lg text-white font-medium mt-10 w-full lg:hover:bg-opacity-90'>
                         Login
+                    </button>
+                    <span>OR</span>
+                    <button className=' bg-transparent border-solid border-2 border-black py-2 rounded-lg text-black font-medium w-full duration-200 ease-in-out lg:hover:bg-black lg:hover:text-white'>
+                        Sign up with Google
                     </button>
                 </Form>
 
