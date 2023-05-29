@@ -34,7 +34,7 @@ const Signin = () => {
                     </button>
                     <span>OR</span>
                     <button className=' bg-transparent border-solid border-2 border-black py-2 rounded-lg text-black font-medium w-full duration-200 ease-in-out lg:hover:bg-black lg:hover:text-white'>
-                        Sign up with Google
+                        Sign in with Google
                     </button>
                 </Form>
 
