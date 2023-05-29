@@ -4,7 +4,7 @@ import { styles } from "../../utils/styles";
 const Kingship = () => {
 
     return (
-        <div className={`${styles.paddingX} ${styles.paddingY} relative bg-benefits-banner bg-no-repeat bg-fixed bg-cover flex flex-col items-center gap-y-10`}>
+        <div className={`${styles.paddingX} ${styles.paddingY} relative bg-benefits-banner bg-no-repeat bg-cover flex flex-col items-center gap-y-10`}>
             {/* <div className=" overlay"></div> */}
             <div className=" flex flex-col items-center gap-y-5 z-30">
                 <h1 className=" text-3xl font-bold text-white">
