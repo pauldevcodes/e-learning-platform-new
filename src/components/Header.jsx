@@ -48,6 +48,11 @@ const Header = () => {
             url: "about",
             link: 'about'
         },
+        {
+            id: 4,
+            url: "#contact",
+            link: 'contact'
+        }
     ]
 
     const [isOpen, setIsOpen] = useState(false)
@@ -131,6 +136,14 @@ const Header = () => {
                             >
                                 About
                             </Link>
+                        </li>
+                        <li>
+                            <a
+                                href='#contact'
+                                className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
+                            >
+                                Contact
+                            </a>
                         </li>
                     </ul>
 

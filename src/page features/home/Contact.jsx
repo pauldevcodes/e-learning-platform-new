@@ -37,7 +37,7 @@ const Contact = () => {
     ]
 
     return (
-        <div className={`${styles.paddingX} py-7 md:py-14 bg-black`}>
+        <div id="contact" className={`${styles.paddingX} py-7 md:py-14 bg-black`}>
             <div className=" flex flex-col gap-y-5 items-center mb-10 lg:mb-16">
                 <h1
                     className={`${styles.sectionHeading} text-white`}
